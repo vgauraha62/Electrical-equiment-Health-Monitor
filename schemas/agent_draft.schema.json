@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/agent_draft.schema.json",
+  "title": "AgentDraft",
+  "description": "Strict agent-draft response contract (M0). Runtime validation is enforced in app/agent_contract.py; this schema documents the shape and is kept in exact sync by tests/test_agent_schema_parity.py. Every object declares additionalProperties:false.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "draft_version", "contract_version", "origin", "data_origin", "asset_id",
+    "bundle_digest_sha256", "status", "summary", "claims", "caveats",
+    "known_gaps", "suggestions", "human_review"
+  ],
+  "properties": {
+    "draft_version": {"type": "string"},
+    "contract_version": {"type": "string"},
+    "origin": {"type": "string"},
+    "data_origin": {"type": "string", "const": "observed"},
+    "asset_id": {"type": "string", "minLength": 1},
+    "bundle_digest_sha256": {"type": "string"},
+    "status": {"type": "string", "enum": ["generated", "insufficient_evidence"]},
+    "summary": {"type": "string", "minLength": 1},
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim_id", "kind", "text", "citations", "computation",
+                     "relationship"],
+        "properties": {
+          "claim_id": {"type": "string"},
+          "kind": {"type": "string", "enum": ["direct", "computation"]},
+          "text": {"type": "string", "minLength": 1},
+          "citations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "type", "evidence_id", "chunk_id", "locator", "source_sha256",
+                "provenance_status"
+              ],
+              "properties": {
+                "type": {"type": "string"},
+                "evidence_id": {"type": ["string", "null"]},
+                "chunk_id": {"type": ["string", "null"]},
+                "locator": {"type": "object"},
+                "source_sha256": {"type": ["string", "null"]},
+                "provenance_status": {"type": "string"}
+              }
+            }
+          },
+          "computation": {
+            "type": ["object", "null"],
+            "additionalProperties": false,
+            "required": ["formula", "formula_version", "scope", "inputs", "input_count",
+                         "inputs_digest_sha256", "result"],
+            "properties": {
+              "formula": {"type": "string"},
+              "formula_version": {"type": "string"},
+              "scope": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["description", "evidence_type", "measurement_type_code",
+                             "provenance_status", "excluded_evidence_ids"],
+                "properties": {
+                  "description": {"type": "string", "minLength": 1},
+                  "evidence_type": {"type": "string", "const": "telemetry"},
+                  "measurement_type_code": {"type": ["string", "null"]},
+                  "provenance_status": {"type": "string", "const": "complete"},
+                  "excluded_evidence_ids": {"type": "array", "items": {"type": "string"}}
+                }
+              },
+              "inputs": {"type": "array", "items": {"type": "string"}},
+              "input_count": {"type": "integer"},
+              "inputs_digest_sha256": {"type": "string"},
+              "result": {"type": "number"}
+            }
+          },
+          "relationship": {
+            "type": ["object", "null"],
+            "additionalProperties": false,
+            "required": ["relation", "telemetry_evidence_id", "ledger_evidence_id",
+                         "caveat"],
+            "properties": {
+              "relation": {"type": "string", "const": "same_id_string"},
+              "telemetry_evidence_id": {"type": "string"},
+              "ledger_evidence_id": {"type": "string"},
+              "caveat": {"type": "string", "minLength": 1}
+            }
+          }
+        }
+      }
+    },
+    "caveats": {"type": "array", "items": {"type": "string"}},
+    "known_gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["gap_id", "kind", "statement", "evidence_ids", "register_id", "detail",
+                     "search_scope", "documentation_scope"],
+        "properties": {
+          "gap_id": {"type": "string"},
+          "kind": {"type": "string"},
+          "statement": {"type": "string"},
+          "evidence_ids": {"type": "array", "items": {"type": "string"}},
+          "register_id": {"type": ["string", "null"]},
+          "detail": {"type": ["object", "null"]},
+          "search_scope": {
+            "type": ["object", "null"],
+            "additionalProperties": false,
+            "required": ["scope_id", "description", "status", "record_count",
+                         "inventory_digest_sha256", "source_files"],
+            "properties": {
+              "scope_id": {"type": "string"},
+              "description": {"type": "string", "minLength": 1},
+              "status": {"type": "string", "enum": ["enumerated", "unavailable"]},
+              "record_count": {"type": ["integer", "null"]},
+              "inventory_digest_sha256": {"type": ["string", "null"]},
+              "source_files": {"type": "array", "items": {"type": "string"}}
+            }
+          },
+          "documentation_scope": {
+            "type": ["object", "null"],
+            "additionalProperties": false,
+            "required": ["subject", "status", "description", "inventory_source"],
+            "properties": {
+              "subject": {"type": "string",
+                          "enum": ["unit_scaling", "timestamp_timezone"]},
+              "status": {"type": "string", "enum": ["enumerated", "unavailable"]},
+              "description": {"type": "string", "minLength": 1},
+              "inventory_source": {"type": ["string", "null"]}
+            }
+          }
+        }
+      }
+    },
+    "suggestions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "suggestion_id", "question_id", "register_id", "domain", "question",
+          "why", "verify_action", "citations", "uncertainty_resolved", "blocks",
+          "group_id", "group_label"
+        ],
+        "properties": {
+          "suggestion_id": {"type": "string"},
+          "question_id": {"type": "string"},
+          "register_id": {"type": "string"},
+          "domain": {"type": ["string", "null"]},
+          "question": {"type": "string"},
+          "why": {"type": "string", "minLength": 1},
+          "verify_action": {"type": "string"},
+          "citations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "type", "evidence_id", "chunk_id", "locator", "source_sha256",
+                "provenance_status"
+              ],
+              "properties": {
+                "type": {"type": "string"},
+                "evidence_id": {"type": ["string", "null"]},
+                "chunk_id": {"type": ["string", "null"]},
+                "locator": {"type": "object"},
+                "source_sha256": {"type": ["string", "null"]},
+                "provenance_status": {"type": "string"}
+              }
+            }
+          },
+          "uncertainty_resolved": {"type": "string", "minLength": 1},
+          "blocks": {"type": "array", "items": {"type": "string"}},
+          "group_id": {"type": ["string", "null"]},
+          "group_label": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "human_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "status"],
+      "properties": {
+        "required": {"type": "boolean"},
+        "status": {"type": "string", "enum": ["pending", "not_required"]}
+      }
+    }
+  },
+  "not": {"required": ["failure_probability"]}
+}

@@ -1,0 +1,13 @@
+{
+  "matrix_version": "1.0.0",
+  "generated_from": ["scripts/audit_source_files.py", "data/en/*", "scripts/translate_workbooks.py"],
+  "rule": "Translated means English text exists with source locators. Draft means unreviewed. Reviewed/approved require recorded human review; nothing here is either.",
+  "rows": [
+    {"source_id": "SRC-STD-OPS-2014", "pages": 49, "translated_pages": 0, "draft_pages": 0, "reviewed_pages": 0, "status": "blocked", "blocker": "scanned images; no OCR tools approved"},
+    {"source_id": "SRC-STD-EVAL-GUIDE", "pages": 56, "translated_pages": "TOC, scope/terms/method, section 9.8, Table A.8, section 10", "draft_pages": "same set", "reviewed_pages": 0, "status": "partial_draft", "blocker": "50+ pages remaining; domain applicability review"},
+    {"source_id": "SRC-DEFECT-LIB", "rows": 23616, "translated_rows": "51 headers + 104 class rows + class vocabulary", "draft_rows": "same set", "reviewed_pages": 0, "status": "partial_draft", "blocker": "non-class rows out of scope; bilingual review"},
+    {"source_id": "SRC-DEFECT-RECORDS", "rows": 1012, "translated_rows": "84 headers + 1011 rows structured via glossary (spans flagged)", "draft_rows": "same set", "reviewed_pages": 0, "status": "partial_draft", "blocker": "free-text residue + bilingual review; personal columns excluded"},
+    {"source_id": "SRC-LEDGER", "rows": 3812, "translated_rows": "34 headers + code tables + target row", "draft_rows": "same set", "reviewed_pages": 0, "status": "partial_draft", "blocker": "3810 non-target rows queued; domain confirmation"},
+    {"source_id": "SRC-CALC-RULES", "rows": 38, "translated_rows": 38, "draft_rows": 38, "reviewed_pages": 0, "status": "translated_draft", "blocker": "2 ambiguous passages + applicability review"}
+  ]
+}

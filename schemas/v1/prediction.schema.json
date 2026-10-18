@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/v1/prediction.schema.json",
+  "title": "Prediction",
+  "description": "Model or rule output. Failure probability is forbidden until verified labels and calibration exist; use anomaly_score or descriptive_flag only.",
+  "type": "object",
+  "required": ["asset_id", "output_type", "model_name", "model_version", "created_at", "evidence_ids", "data_origin", "schema_version"],
+  "properties": {
+    "asset_id": {"type": "string", "minLength": 1},
+    "output_type": {"type": "string", "enum": ["anomaly_score", "descriptive_flag", "readiness_route"]},
+    "prediction_timestamp": {"type": ["string", "null"]},
+    "forecast_horizon": {"type": ["string", "null"]},
+    "value": {"type": ["number", "string", "null"]},
+    "uncertainty": {"type": ["string", "null"]},
+    "model_name": {"type": "string"},
+    "model_version": {"type": "string"},
+    "created_at": {"type": "string"},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}},
+    "knowledge_chunk_ids": {"type": "array", "items": {"type": "string"}},
+    "data_origin": {"type": "string", "enum": ["observed", "synthetic"]},
+    "schema_version": {"type": "string", "const": "1.0.0"}
+  },
+  "additionalProperties": true,
+  "not": {"required": ["failure_probability"]}
+}

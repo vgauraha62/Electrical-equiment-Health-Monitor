@@ -1,0 +1,210 @@
+{
+  "audit_version": "1.0.0",
+  "forecasting_readiness": {
+    "decision": "descriptive monitoring only",
+    "minimum_additional_data": "weeks of verified-cadence history per asset, multiple labeled assets, confirmed timezone, declared horizon with time-split protocol",
+    "reasons": [
+      "98 timestamps cannot yield train/validation/test periods with non-trivial horizons and no leakage",
+      "single asset: no cross-asset generalization check possible",
+      "no verified target labels exist for any horizon"
+    ],
+    "temporal_depth": "about 1.6 days with one 885-minute gap",
+    "unique_timestamps": 98
+  },
+  "frozen_baseline_sha256_note": "M1.6 artifacts read-only; hashes verified separately",
+  "recomputation": {
+    "codes_checked": [
+      "A_phsA",
+      "A_phsB",
+      "A_phsC",
+      "PhVAr_phsA",
+      "PhVAr_phsB",
+      "PhVAr_phsC",
+      "PhV_phsA",
+      "PhV_phsB",
+      "PhV_phsC",
+      "PhW_phsA",
+      "PhW_phsB",
+      "PhW_phsC",
+      "TotVar",
+      "TotW"
+    ],
+    "discrepancies": []
+  },
+  "robustness": {
+    "correlation_sensitivity": {
+      "A_phsA~A_phsB": {
+        "excluded_high_y": 7,
+        "n": 98,
+        "r_all": 0.417354,
+        "r_without_high_y": 0.268886
+      },
+      "PhV_phsA~PhV_phsB": {
+        "excluded_high_y": 0,
+        "n": 98,
+        "r_all": 0.994032,
+        "r_without_high_y": 0.994032
+      },
+      "TotW~TotVar": {
+        "excluded_high_y": 5,
+        "n": 98,
+        "r_all": 0.197164,
+        "r_without_high_y": 0.059546
+      }
+    },
+    "independence_note": "Lag-1 autocorrelation far from zero rejects independent-observation assumptions.",
+    "lag1_autocorrelation": {
+      "A_phsA": 0.703713,
+      "A_phsB": 0.591115,
+      "A_phsC": 0.710399,
+      "PhVAr_phsA": 0.398832,
+      "PhVAr_phsB": 0.275337,
+      "PhVAr_phsC": 0.258826,
+      "PhV_phsA": 0.982952,
+      "PhV_phsB": 0.978834,
+      "PhV_phsC": 0.982772,
+      "PhW_phsA": 0.680601,
+      "PhW_phsB": 0.580845,
+      "PhW_phsC": 0.710959,
+      "TotVar": 0.361165,
+      "TotW": 0.813253
+    },
+    "mean_sensitivity_to_high_candidates": {
+      "A_phsA": {
+        "excluded_high_candidates": 2,
+        "mean_all": 50.558367,
+        "mean_shift": -1.048367,
+        "mean_without_high": 49.51
+      },
+      "A_phsB": {
+        "excluded_high_candidates": 7,
+        "mean_all": 38.398367,
+        "mean_shift": -3.08584,
+        "mean_without_high": 35.312527
+      },
+      "A_phsC": {
+        "excluded_high_candidates": 1,
+        "mean_all": 34.333061,
+        "mean_shift": -0.701721,
+        "mean_without_high": 33.63134
+      },
+      "PhVAr_phsA": {
+        "excluded_high_candidates": 3,
+        "mean_all": 0.12898,
+        "mean_shift": -0.052011,
+        "mean_without_high": 0.076968
+      },
+      "PhVAr_phsB": {
+        "excluded_high_candidates": 1,
+        "mean_all": -0.00049,
+        "mean_shift": -0.018314,
+        "mean_without_high": -0.018804
+      },
+      "PhVAr_phsC": {
+        "excluded_high_candidates": 2,
+        "mean_all": 0.650776,
+        "mean_shift": -0.034609,
+        "mean_without_high": 0.616167
+      },
+      "PhV_phsA": {
+        "excluded_high_candidates": 0,
+        "mean_all": 229.629592,
+        "mean_shift": 0.0,
+        "mean_without_high": 229.629592
+      },
+      "PhV_phsB": {
+        "excluded_high_candidates": 0,
+        "mean_all": 228.714286,
+        "mean_shift": 0.0,
+        "mean_without_high": 228.714286
+      },
+      "PhV_phsC": {
+        "excluded_high_candidates": 0,
+        "mean_all": 227.941837,
+        "mean_shift": 0.0,
+        "mean_without_high": 227.941837
+      },
+      "PhW_phsA": {
+        "excluded_high_candidates": 3,
+        "mean_all": 10.765714,
+        "mean_shift": -0.362683,
+        "mean_without_high": 10.403032
+      },
+      "PhW_phsB": {
+        "excluded_high_candidates": 9,
+        "mean_all": 8.575837,
+        "mean_shift": -0.862938,
+        "mean_without_high": 7.712899
+      },
+      "PhW_phsC": {
+        "excluded_high_candidates": 1,
+        "mean_all": 7.513959,
+        "mean_shift": -0.157588,
+        "mean_without_high": 7.356371
+      },
+      "TotVar": {
+        "excluded_high_candidates": 5,
+        "mean_all": 0.771918,
+        "mean_shift": -0.126241,
+        "mean_without_high": 0.645677
+      },
+      "TotW": {
+        "excluded_high_candidates": 3,
+        "mean_all": 26.856653,
+        "mean_shift": -0.971516,
+        "mean_without_high": 25.885137
+      }
+    },
+    "spread_segment_stability": {
+      "first_half": {
+        "aligned_timestamps": 49,
+        "spread_p50": 84.550085
+      },
+      "second_half": {
+        "aligned_timestamps": 49,
+        "spread_p50": 58.125
+      }
+    }
+  },
+  "timestamps": {
+    "blocked_conclusions": [
+      "UTC conversion",
+      "cross-source clock alignment",
+      "equal-spacing assumptions",
+      "physical sampling-rate claims"
+    ],
+    "distinct_count": 98,
+    "duplicate_within_code": {
+      "A_phsA": 0,
+      "A_phsB": 0,
+      "A_phsC": 0,
+      "PhVAr_phsA": 0,
+      "PhVAr_phsB": 0,
+      "PhVAr_phsC": 0,
+      "PhV_phsA": 0,
+      "PhV_phsB": 0,
+      "PhV_phsC": 0,
+      "PhW_phsA": 0,
+      "PhW_phsB": 0,
+      "PhW_phsC": 0,
+      "TotVar": 0,
+      "TotW": 0
+    },
+    "first": "2026-08-24 00:00:00",
+    "history_only_stamps": 97,
+    "interval_max": 885.0,
+    "interval_mean": 23.969072,
+    "interval_median": 15.0,
+    "interval_min": 15.0,
+    "last": "2026-08-25 14:45:00",
+    "most_common_interval": [
+      15.0,
+      96
+    ],
+    "shared_snapshot_history_stamps": 0,
+    "snapshot_only_stamps": 1,
+    "timestamps_with_all_14_codes": 98,
+    "timezone_markers_found": 0,
+    "unparseable": []
+  }
+}

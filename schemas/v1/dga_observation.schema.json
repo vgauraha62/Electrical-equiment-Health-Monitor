@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/v1/dga_observation.schema.json",
+  "title": "DGAObservation",
+  "description": "Dissolved gas analysis observation. No DGA data exists in current exports; records must be absent or explicitly unknown, never fabricated.",
+  "type": "object",
+  "required": ["asset_id", "data_origin", "schema_version", "source_ref", "quality_status"],
+  "properties": {
+    "asset_id": {"type": "string", "minLength": 1},
+    "sampled_at_original": {"type": ["string", "null"]},
+    "sampled_at_timezone": {"type": ["string", "null"]},
+    "gases_ppm": {
+      "type": ["object", "null"],
+      "properties": {
+        "H2": {"type": ["number", "null"]},
+        "CH4": {"type": ["number", "null"]},
+        "C2H6": {"type": ["number", "null"]},
+        "C2H4": {"type": ["number", "null"]},
+        "C2H2": {"type": ["number", "null"]},
+        "CO": {"type": ["number", "null"]},
+        "CO2": {"type": ["number", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "moisture_ppm": {"type": ["number", "null"]},
+    "test_method": {"type": ["string", "null"]},
+    "laboratory": {"type": ["string", "null"]},
+    "quality_status": {"type": "string", "enum": ["valid", "missing", "unknown", "not_applicable", "invalid"]},
+    "data_origin": {"type": "string", "enum": ["observed", "synthetic"]},
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "source_ref": {"type": "object"}
+  },
+  "additionalProperties": true
+}

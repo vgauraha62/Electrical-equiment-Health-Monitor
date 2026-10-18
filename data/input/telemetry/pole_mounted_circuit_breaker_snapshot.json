@@ -1,0 +1,195 @@
+{
+  "code": 200,
+  "msg": "success",
+  "data": {
+    "status": "000000",
+    "errors": "success",
+    "result": {
+      "current": 1,
+      "total": 8,
+      "pages": 1,
+      "size": 8,
+      "records": [
+        {
+          "measPointId": "3812ac8dba94ce060378b9a460017a380dc6481b0e#0111#100#28DKX-1873#010100010002",
+          "psrId": "3812ac8dba94ce060378b9a460017a380dc6481b0e",
+          "psrType": "0401005",
+          "astId": null,
+          "astType": null,
+          "consNo": null,
+          "consType": null,
+          "measTypeCode": "A_phsA",
+          "measTypeName": "Phase A current",
+          "source": "4",
+          "pt": null,
+          "ct": null,
+          "locationType": "100",
+          "telemetryValue": [
+            {
+              "measValue": "0.000000",
+              "dataTime": "2026-08-25 16:30:00"
+            }
+          ],
+          "tFactor": null
+        },
+        {
+          "measPointId": "3812ac8dba94ce060378b9a460017a380dc6481b0e#0111#100#28DKX-1873#010100010003",
+          "psrId": "3812ac8dba94ce060378b9a460017a380dc6481b0e",
+          "psrType": "0401005",
+          "astId": null,
+          "astType": null,
+          "consNo": null,
+          "consType": null,
+          "measTypeCode": "A_phsB",
+          "measTypeName": "Phase B current",
+          "source": "4",
+          "pt": null,
+          "ct": null,
+          "locationType": "100",
+          "telemetryValue": [
+            {
+              "measValue": "0.000000",
+              "dataTime": "2026-08-25 16:30:00"
+            }
+          ],
+          "tFactor": null
+        },
+        {
+          "measPointId": "3812ac8dba94ce060378b9a460017a380dc6481b0e#0111#100#28DKX-1873#010100010004",
+          "psrId": "3812ac8dba94ce060378b9a460017a380dc6481b0e",
+          "psrType": "0401005",
+          "astId": null,
+          "astType": null,
+          "consNo": null,
+          "consType": null,
+          "measTypeCode": "A_phsC",
+          "measTypeName": "Phase C current",
+          "source": "4",
+          "pt": null,
+          "ct": null,
+          "locationType": "100",
+          "telemetryValue": [
+            {
+              "measValue": "0.000000",
+              "dataTime": "2026-08-25 16:30:00"
+            }
+          ],
+          "tFactor": null
+        },
+        {
+          "measPointId": "3812ac8dba94ce060378b9a460017a380dc6481b0e#0111#100#28DKX-1873#010100020002",
+          "psrId": "3812ac8dba94ce060378b9a460017a380dc6481b0e",
+          "psrType": "0401005",
+          "astId": null,
+          "astType": null,
+          "consNo": null,
+          "consType": null,
+          "measTypeCode": "PhV_phsA",
+          "measTypeName": "Phase A voltage",
+          "source": "4",
+          "pt": null,
+          "ct": null,
+          "locationType": "100",
+          "telemetryValue": [
+            {
+              "measValue": "0.000000",
+              "dataTime": "2026-08-25 16:30:00"
+            }
+          ],
+          "tFactor": null
+        },
+        {
+          "measPointId": "3812ac8dba94ce060378b9a460017a380dc6481b0e#0111#100#28DKX-1873#010100020003",
+          "psrId": "3812ac8dba94ce060378b9a460017a380dc6481b0e",
+          "psrType": "0401005",
+          "astId": null,
+          "astType": null,
+          "consNo": null,
+          "consType": null,
+          "measTypeCode": "PhV_phsB",
+          "measTypeName": "Phase B voltage",
+          "source": "4",
+          "pt": null,
+          "ct": null,
+          "locationType": "100",
+          "telemetryValue": [
+            {
+              "measValue": "0.000000",
+              "dataTime": "2026-08-25 16:30:00"
+            }
+          ],
+          "tFactor": null
+        },
+        {
+          "measPointId": "3812ac8dba94ce060378b9a460017a380dc6481b0e#0111#100#28DKX-1873#010100020004",
+          "psrId": "3812ac8dba94ce060378b9a460017a380dc6481b0e",
+          "psrType": "0401005",
+          "astId": null,
+          "astType": null,
+          "consNo": null,
+          "consType": null,
+          "measTypeCode": "PhV_phsC",
+          "measTypeName": "Phase C voltage",
+          "source": "4",
+          "pt": null,
+          "ct": null,
+          "locationType": "100",
+          "telemetryValue": [
+            {
+              "measValue": "0.000000",
+              "dataTime": "2026-08-25 16:30:00"
+            }
+          ],
+          "tFactor": null
+        },
+        {
+          "measPointId": "3812ac8dba94ce060378b9a460017a380dc6481b0e#0111#100#28DKX-1873#010100030001",
+          "psrId": "3812ac8dba94ce060378b9a460017a380dc6481b0e",
+          "psrType": "0401005",
+          "astId": null,
+          "astType": null,
+          "consNo": null,
+          "consType": null,
+          "measTypeCode": "TotW",
+          "measTypeName": "Active power (P)",
+          "source": "4",
+          "pt": null,
+          "ct": null,
+          "locationType": "100",
+          "telemetryValue": [
+            {
+              "measValue": "0.000000",
+              "dataTime": "2026-08-25 16:30:00"
+            }
+          ],
+          "tFactor": null
+        },
+        {
+          "measPointId": "3812ac8dba94ce060378b9a460017a380dc6481b0e#0111#100#28DKX-1873#010100030002",
+          "psrId": "3812ac8dba94ce060378b9a460017a380dc6481b0e",
+          "psrType": "0401005",
+          "astId": null,
+          "astType": null,
+          "consNo": null,
+          "consType": null,
+          "measTypeCode": "TotVar",
+          "measTypeName": "Reactive power (Q)",
+          "source": "4",
+          "pt": null,
+          "ct": null,
+          "locationType": "100",
+          "telemetryValue": [
+            {
+              "measValue": "0.000000",
+              "dataTime": "2026-08-25 16:30:00"
+            }
+          ],
+          "tFactor": null
+        }
+      ]
+    }
+  },
+  "timestamp": 1787646881940,
+  "requestTime": 1787646881915,
+  "executeTime": 25
+}

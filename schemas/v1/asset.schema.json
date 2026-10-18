@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/v1/asset.schema.json",
+  "title": "TransformerAsset",
+  "description": "Canonical transformer asset metadata. Oil-immersed construction is unconfirmed until verified by equipment record or domain reviewer.",
+  "type": "object",
+  "required": ["asset_id", "equipment_type_code", "schema_version", "data_origin"],
+  "properties": {
+    "asset_id": {"type": "string", "minLength": 1},
+    "equipment_type_code": {"type": "string", "minLength": 1},
+    "asset_type_label": {"type": "string"},
+    "oil_immersed_confirmed": {"type": "boolean"},
+    "oil_immersion_evidence": {"type": ["string", "null"]},
+    "manufacturer": {"type": ["string", "null"]},
+    "rating_kva": {"type": ["number", "null"]},
+    "voltage_class_kv": {"type": ["string", "null"]},
+    "installation_date": {"type": ["string", "null"]},
+    "cooling_method": {"type": ["string", "null"]},
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "data_origin": {"type": "string", "enum": ["observed", "synthetic"]},
+    "source_ref": {"type": ["object", "null"]}
+  },
+  "additionalProperties": true
+}

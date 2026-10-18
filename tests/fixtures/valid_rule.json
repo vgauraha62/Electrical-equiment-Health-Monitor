@@ -1,0 +1,1 @@
+{"applicability": {"conditions": null, "equipment_type_code": "0408001"}, "logic_ref": "app/decision.py:evaluate_data_readiness", "rule_id": "readiness_oil_unconfirmed", "rule_version": "1.0.0", "schema_version": "1.0.0", "status": "approved"}

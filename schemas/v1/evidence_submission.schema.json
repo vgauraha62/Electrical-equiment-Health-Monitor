@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/v1/evidence_submission.schema.json",
+  "title": "EvidenceSubmission",
+  "description": "Intake record for an external evidence response. Intake status tracks handling; reviewer status tracks review. Neither implies the engineering claim is verified.",
+  "type": "object",
+  "required": ["submission_id", "evidence_request_id", "received_at", "received_timezone",
+               "intake_status", "reviewer_status", "schema_version"],
+  "properties": {
+    "submission_id": {"type": "string", "minLength": 1},
+    "evidence_request_id": {"type": "string", "minLength": 1},
+    "submission_source": {"type": ["string", "null"]},
+    "source_date": {"type": ["string", "null"]},
+    "received_at": {"type": "string", "minLength": 1},
+    "received_timezone": {"type": "string", "minLength": 1},
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["original_filename", "sha256"],
+        "properties": {
+          "original_filename": {"type": "string", "minLength": 1},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "source_locator": {"type": ["string", "null"]}
+        },
+        "additionalProperties": true
+      }
+    },
+    "asset_context": {"type": ["string", "null"]},
+    "measurement_context": {"type": ["string", "null"]},
+    "stated_interpretation": {"type": ["string", "null"]},
+    "stated_uncertainty": {"type": ["string", "null"]},
+    "intake_status": {"type": "string", "enum": ["received", "intake_validated",
+      "needs_clarification", "ready_for_review", "accepted", "rejected"]},
+    "reviewer_status": {"type": "string", "enum": ["not_reviewed", "under_review",
+      "approved", "rejected"]},
+    "schema_version": {"type": "string", "const": "1.0.0"}
+  },
+  "additionalProperties": true
+}

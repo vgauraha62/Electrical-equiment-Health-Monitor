@@ -1,0 +1,21 @@
+{
+ "catalog_sha256": "1a7cd97a0cc377291292965c6bcbf6de8f9cc6d8f23036688d2d8f987c0ee9ab",
+ "excludes": [
+  "physical asset identity",
+  "engineering-rule applicability",
+  "measurement units",
+  "outcome labels",
+  "time semantics"
+ ],
+ "record_version": "ledger-review-v1",
+ "review": {
+  "decision": "approved",
+  "reviewed_at": "2026-10-17",
+  "reviewed_by": "project_owner",
+  "reviewer_role": "equipment ledger data owner",
+  "scope": "translation accuracy of the ledger fields only (column meanings, code-table and date renderings)"
+ },
+ "review_status": "approved",
+ "source_id": "SRC-LEDGER",
+ "translation_status": "reviewed"
+}

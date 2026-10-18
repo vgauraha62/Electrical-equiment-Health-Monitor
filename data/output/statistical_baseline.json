@@ -1,0 +1,451 @@
+{
+  "analysis_version": "1.0.0",
+  "correlations": {
+    "A_phsA~A_phsB": {
+      "aligned_observations": 98,
+      "n": 98,
+      "note": "descriptive linear association only; not causal",
+      "r": 0.417354
+    },
+    "A_phsA~A_phsC": {
+      "aligned_observations": 98,
+      "n": 98,
+      "note": "descriptive linear association only; not causal",
+      "r": 0.577038
+    },
+    "A_phsB~A_phsC": {
+      "aligned_observations": 98,
+      "n": 98,
+      "note": "descriptive linear association only; not causal",
+      "r": 0.441793
+    },
+    "PhV_phsA~PhV_phsB": {
+      "aligned_observations": 98,
+      "n": 98,
+      "note": "descriptive linear association only; not causal",
+      "r": 0.994032
+    },
+    "PhW_phsA~TotW": {
+      "aligned_observations": 98,
+      "n": 98,
+      "note": "descriptive linear association only; not causal",
+      "r": 0.83079
+    },
+    "TotW~TotVar": {
+      "aligned_observations": 98,
+      "n": 98,
+      "note": "descriptive linear association only; not causal",
+      "r": 0.197164
+    }
+  },
+  "distributions": {
+    "A_phsA": {
+      "count": 98,
+      "missing_or_non_numeric": 0,
+      "outlier_candidates": {
+        "fence_high": 97.86,
+        "fence_low": -3.42,
+        "high": [
+          99.2,
+          102.56
+        ],
+        "low": []
+      },
+      "quantiles": {
+        "p10": 29.344,
+        "p25": 34.56,
+        "p50": 48.32,
+        "p75": 59.88,
+        "p90": 77.744
+      },
+      "tukey_k": 1.5
+    },
+    "A_phsB": {
+      "count": 98,
+      "missing_or_non_numeric": 0,
+      "outlier_candidates": {
+        "fence_high": 68.54,
+        "fence_low": 4.38,
+        "high": [
+          68.64,
+          73.44,
+          77.44,
+          77.6,
+          79.52,
+          85.92,
+          87.04
+        ],
+        "low": []
+      },
+      "quantiles": {
+        "p10": 19.904,
+        "p25": 28.44,
+        "p50": 35.44,
+        "p75": 44.48,
+        "p90": 63.744
+      },
+      "tukey_k": 1.5
+    },
+    "A_phsC": {
+      "count": 98,
+      "missing_or_non_numeric": 0,
+      "outlier_candidates": {
+        "fence_high": 95.66,
+        "fence_low": -28.66,
+        "high": [
+          102.4
+        ],
+        "low": []
+      },
+      "quantiles": {
+        "p10": 10.992,
+        "p25": 17.96,
+        "p50": 31.36,
+        "p75": 49.04,
+        "p90": 60.48
+      },
+      "tukey_k": 1.5
+    },
+    "PhVAr_phsA": {
+      "count": 98,
+      "missing_or_non_numeric": 0,
+      "outlier_candidates": {
+        "fence_high": 1.272,
+        "fence_low": -1.064,
+        "high": [
+          1.44,
+          1.488,
+          2.4
+        ],
+        "low": [
+          -1.104
+        ]
+      },
+      "quantiles": {
+        "p10": -0.432,
+        "p25": -0.188,
+        "p50": 0.016,
+        "p75": 0.396,
+        "p90": 0.8624
+      },
+      "tukey_k": 1.5
+    },
+    "PhVAr_phsB": {
+      "count": 98,
+      "missing_or_non_numeric": 0,
+      "outlier_candidates": {
+        "fence_high": 1.114,
+        "fence_low": -1.142,
+        "high": [
+          1.776
+        ],
+        "low": []
+      },
+      "quantiles": {
+        "p10": -0.5968,
+        "p25": -0.296,
+        "p50": -0.048,
+        "p75": 0.268,
+        "p90": 0.5968
+      },
+      "tukey_k": 1.5
+    },
+    "PhVAr_phsC": {
+      "count": 98,
+      "missing_or_non_numeric": 0,
+      "outlier_candidates": {
+        "fence_high": 2.08,
+        "fence_low": -0.736,
+        "high": [
+          2.208,
+          2.416
+        ],
+        "low": []
+      },
+      "quantiles": {
+        "p10": 0.064,
+        "p25": 0.32,
+        "p50": 0.592,
+        "p75": 1.024,
+        "p90": 1.184
+      },
+      "tukey_k": 1.5
+    },
+    "PhV_phsA": {
+      "count": 98,
+      "missing_or_non_numeric": 0,
+      "outlier_candidates": {
+        "fence_high": 238.5125,
+        "fence_low": 221.2125,
+        "high": [],
+        "low": []
+      },
+      "quantiles": {
+        "p10": 226.67,
+        "p25": 227.7,
+        "p50": 228.6,
+        "p75": 232.025,
+        "p90": 233.99
+      },
+      "tukey_k": 1.5
+    },
+    "PhV_phsB": {
+      "count": 98,
+      "missing_or_non_numeric": 0,
+      "outlier_candidates": {
+        "fence_high": 237.9375,
+        "fence_low": 219.6375,
+        "high": [],
+        "low": []
+      },
+      "quantiles": {
+        "p10": 225.9,
+        "p25": 226.5,
+        "p50": 227.5,
+        "p75": 231.075,
+        "p90": 233.43
+      },
+      "tukey_k": 1.5
+    },
+    "PhV_phsC": {
+      "count": 98,
+      "missing_or_non_numeric": 0,
+      "outlier_candidates": {
+        "fence_high": 236.6375,
+        "fence_low": 219.3375,
+        "high": [],
+        "low": []
+      },
+      "quantiles": {
+        "p10": 225.27,
+        "p25": 225.825,
+        "p50": 226.9,
+        "p75": 230.15,
+        "p90": 232.43
+      },
+      "tukey_k": 1.5
+    },
+    "PhW_phsA": {
+      "count": 98,
+      "missing_or_non_numeric": 0,
+      "outlier_candidates": {
+        "fence_high": 21.79,
+        "fence_low": -1.554,
+        "high": [
+          21.92,
+          21.936,
+          22.896
+        ],
+        "low": []
+      },
+      "quantiles": {
+        "p10": 5.8224,
+        "p25": 7.2,
+        "p50": 10.24,
+        "p75": 13.036,
+        "p90": 17.2192
+      },
+      "tukey_k": 1.5
+    },
+    "PhW_phsB": {
+      "count": 98,
+      "missing_or_non_numeric": 0,
+      "outlier_candidates": {
+        "fence_high": 14.81,
+        "fence_low": 1.354,
+        "high": [
+          15.072,
+          15.28,
+          15.52,
+          16.512,
+          17.28,
+          17.456,
+          17.92,
+          19.36,
+          19.584
+        ],
+        "low": []
+      },
+      "quantiles": {
+        "p10": 4.3216,
+        "p25": 6.4,
+        "p50": 8.024,
+        "p75": 9.764,
+        "p90": 13.6256
+      },
+      "tukey_k": 1.5
+    },
+    "PhW_phsC": {
+      "count": 98,
+      "missing_or_non_numeric": 0,
+      "outlier_candidates": {
+        "fence_high": 21.138,
+        "fence_low": -6.398,
+        "high": [
+          22.8
+        ],
+        "low": []
+      },
+      "quantiles": {
+        "p10": 2.16,
+        "p25": 3.928,
+        "p50": 6.824,
+        "p75": 10.812,
+        "p90": 13.0848
+      },
+      "tukey_k": 1.5
+    },
+    "TotVar": {
+      "count": 98,
+      "missing_or_non_numeric": 0,
+      "outlier_candidates": {
+        "fence_high": 2.532,
+        "fence_low": -1.084,
+        "high": [
+          2.688,
+          3.104,
+          3.104,
+          3.248,
+          3.456
+        ],
+        "low": [
+          -1.168
+        ]
+      },
+      "quantiles": {
+        "p10": -0.3888,
+        "p25": 0.272,
+        "p50": 0.672,
+        "p75": 1.176,
+        "p90": 2.1216
+      },
+      "tukey_k": 1.5
+    },
+    "TotW": {
+      "count": 98,
+      "missing_or_non_numeric": 0,
+      "outlier_candidates": {
+        "fence_high": 54.212,
+        "fence_low": -2.684,
+        "high": [
+          54.72,
+          58.544,
+          59.6
+        ],
+        "low": []
+      },
+      "quantiles": {
+        "p10": 15.4144,
+        "p25": 18.652,
+        "p50": 24.56,
+        "p75": 32.876,
+        "p90": 40.4176
+      },
+      "tukey_k": 1.5
+    }
+  },
+  "params": {
+    "calc_sheet_formulas": "NOT applied (pending review)",
+    "correlation": "Pearson on timestamp-aligned finite values",
+    "fill_rule_x25": "NOT applied (applicability unestablished)",
+    "quantile_method": "linear interpolation",
+    "tukey_k": 1.5
+  },
+  "phase_comparison": {
+    "active_power": {
+      "aligned_timestamps": 98,
+      "codes": [
+        "PhW_phsA",
+        "PhW_phsB",
+        "PhW_phsC"
+      ],
+      "interpretation": "descriptive spread only; no balance threshold applied",
+      "spread_formula": "(max-min)/abs(mean)*100 over the three phase values; None unless 3 values and mean != 0",
+      "spread_quantiles": {
+        "p10": 32.71,
+        "p25": 46.4225,
+        "p50": 71.675,
+        "p75": 98.77,
+        "p90": 113.642
+      }
+    },
+    "current": {
+      "aligned_timestamps": 98,
+      "codes": [
+        "A_phsA",
+        "A_phsB",
+        "A_phsC"
+      ],
+      "interpretation": "descriptive spread only; no balance threshold applied",
+      "spread_formula": "(max-min)/abs(mean)*100 over the three phase values; None unless 3 values and mean != 0",
+      "spread_quantiles": {
+        "p10": 34.569,
+        "p25": 45.555,
+        "p50": 70.015,
+        "p75": 91.6825,
+        "p90": 113.189
+      }
+    },
+    "reactive_power": {
+      "aligned_timestamps": 98,
+      "codes": [
+        "PhVAr_phsA",
+        "PhVAr_phsB",
+        "PhVAr_phsC"
+      ],
+      "interpretation": "descriptive spread only; no balance threshold applied",
+      "spread_formula": "(max-min)/abs(mean)*100 over the three phase values; None unless 3 values and mean != 0",
+      "spread_quantiles": {
+        "p10": 90.208,
+        "p25": 159.9525,
+        "p50": 308.025,
+        "p75": 616.1225,
+        "p90": 1135.059
+      }
+    },
+    "voltage": {
+      "aligned_timestamps": 98,
+      "codes": [
+        "PhV_phsA",
+        "PhV_phsB",
+        "PhV_phsC"
+      ],
+      "interpretation": "descriptive spread only; no balance threshold applied",
+      "spread_formula": "(max-min)/abs(mean)*100 over the three phase values; None unless 3 values and mean != 0",
+      "spread_quantiles": {
+        "p10": 0.57,
+        "p25": 0.66,
+        "p50": 0.75,
+        "p75": 0.83,
+        "p90": 0.92
+      }
+    }
+  },
+  "population": {
+    "asset_id": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294",
+    "eligible_records": 1372,
+    "equipment_type_code": "0408001",
+    "excluded_conflicting_overlaps": [],
+    "excluded_malformed_timestamps": [],
+    "excluded_non_finite_values": [],
+    "excluded_non_target_scope": 4598,
+    "independence_note": "Overlapping exports deduplicated; repeated observations of one asset are not independent samples.",
+    "overlap_consistent_deduped": [],
+    "scoped_records": 1372
+  },
+  "prohibited_interpretations": [
+    "Patterns are descriptive, not proof of fault or impending failure.",
+    "Outlier candidates are review pointers, not fault classifications.",
+    "Correlations do not establish causality."
+  ],
+  "source": {
+    "path": "data/output/canonical_measurements.ndjson",
+    "record_count": 5970,
+    "sha256": "fd1cb85765342dbfa55c7468c2736431c0fdb9683d5d35c449fb901b7ea7e656"
+  },
+  "verification_status": {
+    "sensor_semantics": "unverified",
+    "timezone": "unconfirmed",
+    "units": "unconfirmed"
+  }
+}

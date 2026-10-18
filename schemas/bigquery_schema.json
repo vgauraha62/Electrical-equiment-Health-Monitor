@@ -1,0 +1,72 @@
+[
+  {
+    "name": "source_file_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "source_record_index",
+    "type": "INTEGER",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "psr_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "measurement_point_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "equipment_type_code",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "measurement_type_code",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "measurement_name",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "measurement_value",
+    "type": "NUMERIC",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "measurement_unit",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "observed_at",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "dataset_type",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "data_origin",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "source_uri",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "quality_flags",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  }
+]

@@ -1,0 +1,641 @@
+{
+ "package_version": "1.0.0",
+ "requests": [
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer confirms unit/scaling/meaning from authoritative source. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "engineering interpretation of A_phsA values",
+    "any threshold or limit applied to A_phsA"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-CODE-A_phsA",
+   "existing_sources": "data/en/calc_rules.md (measurement-info sheet: low-side voltage V, current A, high-side fill x25); data/en/telemetry_source_dictionary.md (label mapping)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "domain reviewer (metering/transformer)",
+   "priority": 1,
+   "priority_group": "measurement_semantics",
+   "question": "What does A_phsA (source label Phase A current) measure, in what unit and scaling?",
+   "required_external": "Instrument/source documentation stating measurand, unit, and scaling for A_phsA.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need to know what unit each meter reports in before any reading can be understood.",
+   "why_it_matters_technical": "Without confirmed units and scaling, every reading is a bare number: no loading, balance, or limit calculation can be interpreted."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer confirms unit/scaling/meaning from authoritative source. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "engineering interpretation of A_phsB values",
+    "any threshold or limit applied to A_phsB"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-CODE-A_phsB",
+   "existing_sources": "data/en/calc_rules.md (measurement-info sheet: low-side voltage V, current A, high-side fill x25); data/en/telemetry_source_dictionary.md (label mapping)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "domain reviewer (metering/transformer)",
+   "priority": 1,
+   "priority_group": "measurement_semantics",
+   "question": "What does A_phsB (source label Phase B current) measure, in what unit and scaling?",
+   "required_external": "Instrument/source documentation stating measurand, unit, and scaling for A_phsB.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need to know what unit each meter reports in before any reading can be understood.",
+   "why_it_matters_technical": "Without confirmed units and scaling, every reading is a bare number: no loading, balance, or limit calculation can be interpreted."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer confirms unit/scaling/meaning from authoritative source. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "engineering interpretation of A_phsC values",
+    "any threshold or limit applied to A_phsC"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-CODE-A_phsC",
+   "existing_sources": "data/en/calc_rules.md (measurement-info sheet: low-side voltage V, current A, high-side fill x25); data/en/telemetry_source_dictionary.md (label mapping)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "domain reviewer (metering/transformer)",
+   "priority": 1,
+   "priority_group": "measurement_semantics",
+   "question": "What does A_phsC (source label Phase C current) measure, in what unit and scaling?",
+   "required_external": "Instrument/source documentation stating measurand, unit, and scaling for A_phsC.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need to know what unit each meter reports in before any reading can be understood.",
+   "why_it_matters_technical": "Without confirmed units and scaling, every reading is a bare number: no loading, balance, or limit calculation can be interpreted."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer confirms unit/scaling/sign from authoritative source. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "engineering interpretation of PhVAr_phsA values",
+    "any threshold or limit applied to PhVAr_phsA"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-CODE-PhVAr_phsA",
+   "existing_sources": "data/en/telemetry_source_dictionary.md (label mapping verified 14/14 records; no unit key in raw points)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "domain reviewer (metering/transformer)",
+   "priority": 1,
+   "priority_group": "measurement_semantics",
+   "question": "What does PhVAr_phsA (source label Phase A reactive power) measure, in what unit, scaling, and sign convention?",
+   "required_external": "Instrument/source documentation stating measurand, unit, scaling, and sign convention for PhVAr_phsA.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need to know what unit each meter reports in before any reading can be understood.",
+   "why_it_matters_technical": "Without confirmed units and scaling, every reading is a bare number: no loading, balance, or limit calculation can be interpreted."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer confirms unit/scaling/sign from authoritative source. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "engineering interpretation of PhVAr_phsB values",
+    "any threshold or limit applied to PhVAr_phsB"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-CODE-PhVAr_phsB",
+   "existing_sources": "data/en/telemetry_source_dictionary.md (label mapping verified 14/14 records; no unit key in raw points)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "domain reviewer (metering/transformer)",
+   "priority": 1,
+   "priority_group": "measurement_semantics",
+   "question": "What does PhVAr_phsB (source label Phase B reactive power) measure, in what unit, scaling, and sign convention?",
+   "required_external": "Instrument/source documentation stating measurand, unit, scaling, and sign convention for PhVAr_phsB.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need to know what unit each meter reports in before any reading can be understood.",
+   "why_it_matters_technical": "Without confirmed units and scaling, every reading is a bare number: no loading, balance, or limit calculation can be interpreted."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer confirms unit/scaling/sign from authoritative source. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "engineering interpretation of PhVAr_phsC values",
+    "any threshold or limit applied to PhVAr_phsC"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-CODE-PhVAr_phsC",
+   "existing_sources": "data/en/telemetry_source_dictionary.md (label mapping verified 14/14 records; no unit key in raw points)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "domain reviewer (metering/transformer)",
+   "priority": 1,
+   "priority_group": "measurement_semantics",
+   "question": "What does PhVAr_phsC (source label Phase C reactive power) measure, in what unit, scaling, and sign convention?",
+   "required_external": "Instrument/source documentation stating measurand, unit, scaling, and sign convention for PhVAr_phsC.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need to know what unit each meter reports in before any reading can be understood.",
+   "why_it_matters_technical": "Without confirmed units and scaling, every reading is a bare number: no loading, balance, or limit calculation can be interpreted."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer confirms unit/scaling/meaning from authoritative source. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "engineering interpretation of PhV_phsA values",
+    "any threshold or limit applied to PhV_phsA"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-CODE-PhV_phsA",
+   "existing_sources": "data/en/calc_rules.md (measurement-info sheet: low-side voltage V, current A, high-side fill x25); data/en/telemetry_source_dictionary.md (label mapping)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "domain reviewer (metering/transformer)",
+   "priority": 1,
+   "priority_group": "measurement_semantics",
+   "question": "What does PhV_phsA (source label Phase A voltage) measure, in what unit and scaling?",
+   "required_external": "Instrument/source documentation stating measurand, unit, and scaling for PhV_phsA.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need to know what unit each meter reports in before any reading can be understood.",
+   "why_it_matters_technical": "Without confirmed units and scaling, every reading is a bare number: no loading, balance, or limit calculation can be interpreted."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer confirms unit/scaling/meaning from authoritative source. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "engineering interpretation of PhV_phsB values",
+    "any threshold or limit applied to PhV_phsB"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-CODE-PhV_phsB",
+   "existing_sources": "data/en/calc_rules.md (measurement-info sheet: low-side voltage V, current A, high-side fill x25); data/en/telemetry_source_dictionary.md (label mapping)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "domain reviewer (metering/transformer)",
+   "priority": 1,
+   "priority_group": "measurement_semantics",
+   "question": "What does PhV_phsB (source label Phase B voltage) measure, in what unit and scaling?",
+   "required_external": "Instrument/source documentation stating measurand, unit, and scaling for PhV_phsB.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need to know what unit each meter reports in before any reading can be understood.",
+   "why_it_matters_technical": "Without confirmed units and scaling, every reading is a bare number: no loading, balance, or limit calculation can be interpreted."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer confirms unit/scaling/meaning from authoritative source. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "engineering interpretation of PhV_phsC values",
+    "any threshold or limit applied to PhV_phsC"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-CODE-PhV_phsC",
+   "existing_sources": "data/en/calc_rules.md (measurement-info sheet: low-side voltage V, current A, high-side fill x25); data/en/telemetry_source_dictionary.md (label mapping)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "domain reviewer (metering/transformer)",
+   "priority": 1,
+   "priority_group": "measurement_semantics",
+   "question": "What does PhV_phsC (source label Phase C voltage) measure, in what unit and scaling?",
+   "required_external": "Instrument/source documentation stating measurand, unit, and scaling for PhV_phsC.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need to know what unit each meter reports in before any reading can be understood.",
+   "why_it_matters_technical": "Without confirmed units and scaling, every reading is a bare number: no loading, balance, or limit calculation can be interpreted."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer confirms unit/scaling/sign from authoritative source. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "engineering interpretation of PhW_phsA values",
+    "any threshold or limit applied to PhW_phsA"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-CODE-PhW_phsA",
+   "existing_sources": "data/en/telemetry_source_dictionary.md (label mapping verified 14/14 records; no unit key in raw points)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "domain reviewer (metering/transformer)",
+   "priority": 1,
+   "priority_group": "measurement_semantics",
+   "question": "What does PhW_phsA (source label Phase A active power) measure, in what unit and scaling?",
+   "required_external": "Instrument/source documentation stating measurand, unit, and scaling for PhW_phsA.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need to know what unit each meter reports in before any reading can be understood.",
+   "why_it_matters_technical": "Without confirmed units and scaling, every reading is a bare number: no loading, balance, or limit calculation can be interpreted."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer confirms unit/scaling/sign from authoritative source. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "engineering interpretation of PhW_phsB values",
+    "any threshold or limit applied to PhW_phsB"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-CODE-PhW_phsB",
+   "existing_sources": "data/en/telemetry_source_dictionary.md (label mapping verified 14/14 records; no unit key in raw points)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "domain reviewer (metering/transformer)",
+   "priority": 1,
+   "priority_group": "measurement_semantics",
+   "question": "What does PhW_phsB (source label Phase B active power) measure, in what unit and scaling?",
+   "required_external": "Instrument/source documentation stating measurand, unit, and scaling for PhW_phsB.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need to know what unit each meter reports in before any reading can be understood.",
+   "why_it_matters_technical": "Without confirmed units and scaling, every reading is a bare number: no loading, balance, or limit calculation can be interpreted."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer confirms unit/scaling/sign from authoritative source. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "engineering interpretation of PhW_phsC values",
+    "any threshold or limit applied to PhW_phsC"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-CODE-PhW_phsC",
+   "existing_sources": "data/en/telemetry_source_dictionary.md (label mapping verified 14/14 records; no unit key in raw points)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "domain reviewer (metering/transformer)",
+   "priority": 1,
+   "priority_group": "measurement_semantics",
+   "question": "What does PhW_phsC (source label Phase C active power) measure, in what unit and scaling?",
+   "required_external": "Instrument/source documentation stating measurand, unit, and scaling for PhW_phsC.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need to know what unit each meter reports in before any reading can be understood.",
+   "why_it_matters_technical": "Without confirmed units and scaling, every reading is a bare number: no loading, balance, or limit calculation can be interpreted."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer confirms unit/scaling/sign from authoritative source. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "engineering interpretation of TotVar values",
+    "any threshold or limit applied to TotVar"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-CODE-TotVar",
+   "existing_sources": "data/en/telemetry_source_dictionary.md (label mapping verified 14/14 records; no unit key in raw points)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "domain reviewer (metering/transformer)",
+   "priority": 1,
+   "priority_group": "measurement_semantics",
+   "question": "What does TotVar (source label Reactive power (Q)) measure, in what unit, scaling, sign convention, and aggregation definition?",
+   "required_external": "Instrument/source documentation stating measurand, unit, scaling, sign convention, and aggregation definition for TotVar.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need to know what unit each meter reports in before any reading can be understood.",
+   "why_it_matters_technical": "Without confirmed units and scaling, every reading is a bare number: no loading, balance, or limit calculation can be interpreted."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer confirms unit/scaling/sign from authoritative source. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "engineering interpretation of TotW values",
+    "any threshold or limit applied to TotW"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-CODE-TotW",
+   "existing_sources": "data/en/telemetry_source_dictionary.md (label mapping verified 14/14 records; no unit key in raw points)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "domain reviewer (metering/transformer)",
+   "priority": 1,
+   "priority_group": "measurement_semantics",
+   "question": "What does TotW (source label Active power (P)) measure, in what unit and scaling, and how does it relate to the phase readings?",
+   "required_external": "Instrument/source documentation stating measurand, unit, scaling, and aggregation definition for TotW.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need to know what unit each meter reports in before any reading can be understood.",
+   "why_it_matters_technical": "Without confirmed units and scaling, every reading is a bare number: no loading, balance, or limit calculation can be interpreted."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Dated owner statement adopts the convention. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "equal-spacing assumptions",
+    "gap imputation",
+    "resampling"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-TIME-INTERVAL",
+   "existing_sources": null,
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "data owner",
+   "priority": 2,
+   "priority_group": "time_semantics",
+   "question": "What do the source timeInterval and timeUnit point metadata mean, and what is the committed sampling cadence?",
+   "required_external": "Source-system documentation defining timeInterval/timeUnit encodings and sampling behavior.",
+   "status": "unverified",
+   "why_it_matters_plain": "we need to know what clock the timestamps follow and how often meters report before trends mean anything.",
+   "why_it_matters_technical": "Without timezone and sampling semantics, timestamps cannot be ordered against real events, converted, or resampled."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Dated owner statement adopts the convention. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "UTC conversion",
+    "cross-source time joins",
+    "forecasting at clock-time horizons"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-TIME-TIMEZONE",
+   "existing_sources": null,
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "data owner",
+   "priority": 2,
+   "priority_group": "time_semantics",
+   "question": "In what timezone (or offset) are the source dataTime wall-clock strings expressed?",
+   "required_external": "Written confirmation from the data owner stating the timezone/offset of dataTime values.",
+   "status": "unverified",
+   "why_it_matters_plain": "we need to know what clock the timestamps follow and how often meters report before trends mean anything.",
+   "why_it_matters_technical": "Without timezone and sampling semantics, timestamps cannot be ordered against real events, converted, or resampled."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer confirms the ledger reading for this asset. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "treating assessments as asset-specific rather than sample-specific"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-ASSET-IDENTITY",
+   "existing_sources": "data/en/ledger_dictionary.md (ledger id 6153: psr_id equals workspace target asset; model S11-M-400/10, 10 kV, in service)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "asset owner",
+   "priority": 3,
+   "priority_group": "asset_identity_context",
+   "question": "Is asset 042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294 the intended distribution-transformer target, and is its class code 0408001 authoritative?",
+   "required_external": "Equipment record or asset-owner confirmation linking psrId to the target transformer class.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need written confirmation of which transformer this is and what it is built from.",
+   "why_it_matters_technical": "Assessment must attach to a confirmed asset: class codes do not prove which equipment or construction is being reviewed."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer confirms the ledger reading for this asset. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "any oil/insulation condition assessment",
+    "oil-related diagnostic rules"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-ASSET-OIL",
+   "existing_sources": "data/en/ledger_dictionary.md (ledger id 6153: insulation code 2 = oil-immersed within class 0302 namespace; needs domain confirmation)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "qualified transformer domain reviewer",
+   "priority": 3,
+   "priority_group": "asset_identity_context",
+   "question": "Is the target asset oil-immersed?",
+   "required_external": "Nameplate record, equipment record, or qualified domain-reviewer confirmation of construction type.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need written confirmation of which transformer this is and what it is built from.",
+   "why_it_matters_technical": "Assessment must attach to a confirmed asset: class codes do not prove which equipment or construction is being reviewed."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Reviewer approves rule set with edition/clause and target applicability. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "class_level",
+   "blocks": [
+    "any diagnostic threshold",
+    "any rule-based fault classification"
+   ],
+   "dependencies": [
+    "EV-CODE-* units",
+    "translation review of ambiguous passages"
+   ],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-RULES-APPROVED",
+   "existing_sources": "data/en/calc_rules.md (candidate state rules with thresholds, 3 ambiguous passages) + data/en/daozhe_guide.md (DL/T 2106-2020 section 9.8/Table A.8; telemetry streams not listed state quantities; applicability unreviewed)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "qualified transformer domain reviewer",
+   "priority": 4,
+   "priority_group": "rule_applicability",
+   "question": "Which approved engineering rules (standard edition + clause) may be applied to these measurements?",
+   "required_external": "Approved rule set with standard title, edition, clause, applicability, author, and approver sign-off.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need an engineer to approve which rules apply to this data.",
+   "why_it_matters_technical": "Candidate rules with thresholds exist, but thresholds need an approved standard clause plus a ruling that the clause covers these telemetry streams."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Owner verifies timestamped outcomes with asset linkage. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "supervised model training",
+    "failure prediction",
+    "anomaly-label evaluation"
+   ],
+   "dependencies": [
+    "container-to-telemetry linkage verification"
+   ],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-OUTCOMES-LABELED",
+   "existing_sources": "data/en/defect_records_dictionary.md + defect_library_subset.md (12 class rows, 7 linked standard IDs; 0 rows for target asset; container linkage unverified)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "asset owner",
+   "priority": 5,
+   "priority_group": "target_outcomes",
+   "question": "Are there timestamped, verified fault, maintenance, or failure outcomes for these assets?",
+   "required_external": "Work-order / failure-event records with asset IDs and timestamps, verified by the asset owner.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need confirmed records of past faults and repairs to test any future early-warning method.",
+   "why_it_matters_technical": "Supervised evaluation needs timestamped, verified outcomes linked to assets; class-level rows without linkage cannot validate anything."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Inventory shows multiple labeled assets with sufficient history. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "class_level",
+   "blocks": [
+    "train/validation/test design",
+    "generalization claims"
+   ],
+   "dependencies": [
+    "EV-OUTCOMES-LABELED",
+    "additional assets"
+   ],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-COVERAGE-EVAL",
+   "existing_sources": null,
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "reliability engineer",
+   "priority": 6,
+   "priority_group": "metadata_and_coverage",
+   "question": "Do enough independent assets and time coverage exist to support time-split and asset-grouped evaluation?",
+   "required_external": "Coverage inventory showing multiple labeled assets with sufficient history each.",
+   "status": "unverified",
+   "why_it_matters_plain": "we need the data dictionary finished and more labeled examples before results can be trusted more broadly.",
+   "why_it_matters_technical": "Auxiliary keys, zero-value meaning, sign convention, and fleet coverage decide whether records can be joined, compared, and generalized."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Owner dictionary defines the key. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "using astId for asset linkage or filtering"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-META-astId",
+   "existing_sources": "ledger usage observed: ast_id equals psr_id on target row (meaning still undefined)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "data owner",
+   "priority": 6,
+   "priority_group": "metadata_and_coverage",
+   "question": "What does the optional source key astId mean?",
+   "required_external": "Source-system field dictionary defining astId.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need the data dictionary finished and more labeled examples before results can be trusted more broadly.",
+   "why_it_matters_technical": "Auxiliary keys, zero-value meaning, sign convention, and fleet coverage decide whether records can be joined, compared, and generalized."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Owner dictionary defines the key. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "using astType for equipment classification"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-META-astType",
+   "existing_sources": "ledger usage observed: ast_type 0302 on target row; code namespaces conditioned by ast_type (meaning still undefined)",
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "data owner",
+   "priority": 6,
+   "priority_group": "metadata_and_coverage",
+   "question": "What does the optional source key astType mean?",
+   "required_external": "Source-system field dictionary defining astType.",
+   "status": "evidence_pending",
+   "why_it_matters_plain": "we need the data dictionary finished and more labeled examples before results can be trusted more broadly.",
+   "why_it_matters_technical": "Auxiliary keys, zero-value meaning, sign convention, and fleet coverage decide whether records can be joined, compared, and generalized."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Owner dictionary defines the key and its effect on values. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "using consNo for consumer linkage"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-META-consNo",
+   "existing_sources": null,
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "data owner",
+   "priority": 6,
+   "priority_group": "metadata_and_coverage",
+   "question": "What does the optional source key consNo mean?",
+   "required_external": "Source-system field dictionary defining consNo.",
+   "status": "unverified",
+   "why_it_matters_plain": "we need the data dictionary finished and more labeled examples before results can be trusted more broadly.",
+   "why_it_matters_technical": "Auxiliary keys, zero-value meaning, sign convention, and fleet coverage decide whether records can be joined, compared, and generalized."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Owner dictionary defines the key and its effect on values. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "using consType for classification"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-META-consType",
+   "existing_sources": null,
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "data owner",
+   "priority": 6,
+   "priority_group": "metadata_and_coverage",
+   "question": "What does the optional source key consType mean?",
+   "required_external": "Source-system field dictionary defining consType.",
+   "status": "unverified",
+   "why_it_matters_plain": "we need the data dictionary finished and more labeled examples before results can be trusted more broadly.",
+   "why_it_matters_technical": "Auxiliary keys, zero-value meaning, sign convention, and fleet coverage decide whether records can be joined, compared, and generalized."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Owner dictionary defines the key and its effect on values. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "rescaling current readings",
+    "engineering interpretation of current magnitudes"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-META-ct",
+   "existing_sources": null,
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "data owner",
+   "priority": 6,
+   "priority_group": "metadata_and_coverage",
+   "question": "What does the optional source key ct mean (e.g. current-transformer ratio), and does it scale the exported values?",
+   "required_external": "Source-system field dictionary defining ct and its relation to exported values.",
+   "status": "unverified",
+   "why_it_matters_plain": "we need the data dictionary finished and more labeled examples before results can be trusted more broadly.",
+   "why_it_matters_technical": "Auxiliary keys, zero-value meaning, sign convention, and fleet coverage decide whether records can be joined, compared, and generalized."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Owner dictionary defines the key and its effect on values. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "rescaling voltage readings",
+    "engineering interpretation of voltage magnitudes"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-META-pt",
+   "existing_sources": null,
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "data owner",
+   "priority": 6,
+   "priority_group": "metadata_and_coverage",
+   "question": "What does the optional source key pt mean (e.g. potential-transformer ratio), and does it scale the exported values?",
+   "required_external": "Source-system field dictionary defining pt and its relation to exported values.",
+   "status": "unverified",
+   "why_it_matters_plain": "we need the data dictionary finished and more labeled examples before results can be trusted more broadly.",
+   "why_it_matters_technical": "Auxiliary keys, zero-value meaning, sign convention, and fleet coverage decide whether records can be joined, compared, and generalized."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Owner dictionary defines the key and its effect on values. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "applying tFactor to any measurement"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-META-tFactor",
+   "existing_sources": null,
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "data owner",
+   "priority": 6,
+   "priority_group": "metadata_and_coverage",
+   "question": "What does the optional source key tFactor mean, and does it transform the exported values?",
+   "required_external": "Source-system field dictionary defining tFactor and its relation to exported values.",
+   "status": "unverified",
+   "why_it_matters_plain": "we need the data dictionary finished and more labeled examples before results can be trusted more broadly.",
+   "why_it_matters_technical": "Auxiliary keys, zero-value meaning, sign convention, and fleet coverage decide whether records can be joined, compared, and generalized."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Metering documentation or reviewer ruling recorded. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "leading/lagging interpretation",
+    "power-factor derivation"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-REACTIVE-SIGN",
+   "existing_sources": null,
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "domain reviewer (metering/transformer)",
+   "priority": 6,
+   "priority_group": "metadata_and_coverage",
+   "question": "What sign convention do negative reactive-power values follow?",
+   "required_external": "Metering documentation stating the reactive-power sign convention.",
+   "status": "unverified",
+   "why_it_matters_plain": "we need the data dictionary finished and more labeled examples before results can be trusted more broadly.",
+   "why_it_matters_technical": "Auxiliary keys, zero-value meaning, sign convention, and fleet coverage decide whether records can be joined, compared, and generalized."
+  },
+  {
+   "acceptance_criteria": "Status advances only per the transition policy. Metering documentation or reviewer ruling recorded. Cited evidence examined by the required role; approval{reviewed_by, reviewed_at} recorded; validator passes.",
+   "applicability": "target_asset",
+   "blocks": [
+    "treating zeros as outages",
+    "excluding zeros from statistics"
+   ],
+   "dependencies": [],
+   "established": "cited source text as recorded in the gap matrix; engineering claim still open",
+   "evidence_id": "EV-ZERO-READINGS",
+   "existing_sources": null,
+   "not_established": "the engineering answer itself (see acceptance criteria)",
+   "owner_role": "domain reviewer (metering/transformer)",
+   "priority": 6,
+   "priority_group": "metadata_and_coverage",
+   "question": "Do zero readings indicate genuine zero load/flow, outages, or sensor floors?",
+   "required_external": "Metering documentation or domain-reviewer ruling on zero-value semantics per code.",
+   "status": "unverified",
+   "why_it_matters_plain": "we need the data dictionary finished and more labeled examples before results can be trusted more broadly.",
+   "why_it_matters_technical": "Auxiliary keys, zero-value meaning, sign convention, and fleet coverage decide whether records can be joined, compared, and generalized."
+  }
+ ],
+ "status_rule": "Requests never change verification status. Only a recorded human review meeting acceptance criteria does."
+}

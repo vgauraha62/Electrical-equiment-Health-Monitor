@@ -1,0 +1,695 @@
+{
+ "asset_count": 13,
+ "asset_inventory": {
+  "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294": {
+   "code_count": 14,
+   "files": [
+    "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt"
+   ],
+   "span": [
+    "2026-08-24 00:00:00",
+    "2026-08-25 14:45:00"
+   ],
+   "unique_timestamps": 98
+  },
+  "182d2b68-8127-48c3-baa9-555e2532ca01": {
+   "code_count": 8,
+   "files": [
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt"
+   ],
+   "span": [
+    "2026-05-29 14:40:00",
+    "2026-05-29 14:40:00"
+   ],
+   "unique_timestamps": 1
+  },
+  "28DKX-3681": {
+   "code_count": 8,
+   "files": [
+    "0403000-\u9988\u7ebf.txt",
+    "0403000-\u9988\u7ebf.txt",
+    "0403000-\u9988\u7ebf.txt",
+    "0403000-\u9988\u7ebf.txt",
+    "0403000-\u9988\u7ebf.txt",
+    "0403000-\u9988\u7ebf.txt",
+    "0403000-\u9988\u7ebf.txt",
+    "0403000-\u9988\u7ebf.txt"
+   ],
+   "span": [
+    "2026-08-25 16:35:00",
+    "2026-08-25 16:35:00"
+   ],
+   "unique_timestamps": 1
+  },
+  "3812ac8dba94ce060378b9a460017a380dc6481b0e": {
+   "code_count": 8,
+   "files": [
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668\u5386\u53f2.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668\u5386\u53f2.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668\u5386\u53f2.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668\u5386\u53f2.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668\u5386\u53f2.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668\u5386\u53f2.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668\u5386\u53f2.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668\u5386\u53f2.txt"
+   ],
+   "span": [
+    "2026-08-24 00:00:00",
+    "2026-08-25 16:30:00"
+   ],
+   "unique_timestamps": 290
+  },
+  "3f422fb6ea8a579e4b7fc3e44a01803f40d7384792": {
+   "code_count": 8,
+   "files": [
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt"
+   ],
+   "span": [
+    "2026-05-29 14:40:00",
+    "2026-05-29 14:40:00"
+   ],
+   "unique_timestamps": 1
+  },
+  "71f8d272-eddf-41b7-baca-fa5045688e1c": {
+   "code_count": 8,
+   "files": [
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt"
+   ],
+   "span": [
+    "2026-05-29 14:40:00",
+    "2026-05-29 14:40:00"
+   ],
+   "unique_timestamps": 1
+  },
+  "7AEB8846-63B9-21F6-E044-001F290DEE91-00001": {
+   "code_count": 14,
+   "files": [
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt"
+   ],
+   "span": [
+    "2026-08-24 00:00:00",
+    "2026-08-25 14:45:00"
+   ],
+   "unique_timestamps": 156
+  },
+  "86247F1B-CB06-BEB6-A9ED-5DBA61AA9804": {
+   "code_count": 8,
+   "files": [
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt"
+   ],
+   "span": [
+    "2026-05-29 14:40:00",
+    "2026-05-29 14:40:00"
+   ],
+   "unique_timestamps": 1
+  },
+  "94c11688-3929-48a7-8a52-b431586832ad": {
+   "code_count": 8,
+   "files": [
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt"
+   ],
+   "span": [
+    "2026-05-29 14:40:00",
+    "2026-05-29 14:40:00"
+   ],
+   "unique_timestamps": 1
+  },
+  "A1322425-E748-388E-7046-58036F36E396": {
+   "code_count": 8,
+   "files": [
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt"
+   ],
+   "span": [
+    "2026-05-29 14:40:00",
+    "2026-05-29 14:40:00"
+   ],
+   "unique_timestamps": 1
+  },
+  "SBID0000001FA6A0066C714512A7ECD71A77830519": {
+   "code_count": 8,
+   "files": [
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt"
+   ],
+   "span": [
+    "2026-05-29 14:40:00",
+    "2026-05-29 14:40:00"
+   ],
+   "unique_timestamps": 1
+  },
+  "SBID00000094B4F46D9E4C4CDF9FA0B0A328EB6C33": {
+   "code_count": 8,
+   "files": [
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt"
+   ],
+   "span": [
+    "2026-05-29 14:40:00",
+    "2026-05-29 14:40:00"
+   ],
+   "unique_timestamps": 1
+  },
+  "SBID000000F4DB5FE0C24E4E1589EE1F273F0C54CE": {
+   "code_count": 8,
+   "files": [
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt"
+   ],
+   "span": [
+    "2026-05-29 14:40:00",
+    "2026-05-29 14:40:00"
+   ],
+   "unique_timestamps": 1
+  }
+ },
+ "audit_version": "telemetry-source-audit-v1",
+ "files": [
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "asset_ids": [
+    "7AEB8846-63B9-21F6-E044-001F290DEE91-00001"
+   ],
+   "equipment_type_code": [
+    "0401004"
+   ],
+   "filename": "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+   "interval_max": null,
+   "interval_median": null,
+   "interval_min": null,
+   "measurement_codes": [
+    "A_phsA",
+    "A_phsB",
+    "A_phsC",
+    "PhVAr_phsA",
+    "PhVAr_phsB",
+    "PhVAr_phsC",
+    "PhV_phsA",
+    "PhV_phsB",
+    "PhV_phsC",
+    "PhW_phsA",
+    "PhW_phsB",
+    "PhW_phsC",
+    "TotVar",
+    "TotW"
+   ],
+   "null_values": 0,
+   "point_count": 14,
+   "point_keys": [
+    "dataTime",
+    "measValue"
+   ],
+   "record_count": 14,
+   "record_keys": [
+    "locationType",
+    "measPointId",
+    "measTypeCode",
+    "measTypeName",
+    "psrId",
+    "psrType",
+    "source",
+    "telemetryValue"
+   ],
+   "timestamp_max": "2026-08-25 14:45:00",
+   "timestamp_min": "2026-08-25 14:45:00",
+   "unique_timestamps": 1,
+   "zero_values": 0
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "asset_ids": [
+    "7AEB8846-63B9-21F6-E044-001F290DEE91-00001"
+   ],
+   "equipment_type_code": [
+    "0401004"
+   ],
+   "filename": "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt",
+   "interval_max": 15.0,
+   "interval_median": 15.0,
+   "interval_min": 15.0,
+   "measurement_codes": [
+    "A_phsA",
+    "A_phsB",
+    "A_phsC",
+    "PhVAr_phsA",
+    "PhVAr_phsB",
+    "PhVAr_phsC",
+    "PhV_phsA",
+    "PhV_phsB",
+    "PhV_phsC",
+    "PhW_phsA",
+    "PhW_phsB",
+    "PhW_phsC",
+    "TotVar",
+    "TotW"
+   ],
+   "null_values": 0,
+   "point_count": 2184,
+   "point_keys": [
+    "dataTime",
+    "measValue",
+    "timeInterval",
+    "timeUnit"
+   ],
+   "record_count": 14,
+   "record_keys": [
+    "locationType",
+    "measPointId",
+    "measTypeCode",
+    "measTypeName",
+    "psrId",
+    "psrType",
+    "source",
+    "telemetryValue"
+   ],
+   "timestamp_max": "2026-08-25 14:45:00",
+   "timestamp_min": "2026-08-24 00:00:00",
+   "unique_timestamps": 156,
+   "zero_values": 8
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "asset_ids": [
+    "3812ac8dba94ce060378b9a460017a380dc6481b0e"
+   ],
+   "equipment_type_code": [
+    "0401005"
+   ],
+   "filename": "0401005-\u67f1\u4e0a\u65ad\u8def\u5668.txt",
+   "interval_max": null,
+   "interval_median": null,
+   "interval_min": null,
+   "measurement_codes": [
+    "A_phsA",
+    "A_phsB",
+    "A_phsC",
+    "PhV_phsA",
+    "PhV_phsB",
+    "PhV_phsC",
+    "TotVar",
+    "TotW"
+   ],
+   "null_values": 0,
+   "point_count": 8,
+   "point_keys": [
+    "dataTime",
+    "measValue"
+   ],
+   "record_count": 8,
+   "record_keys": [
+    "astId",
+    "astType",
+    "consNo",
+    "consType",
+    "ct",
+    "locationType",
+    "measPointId",
+    "measTypeCode",
+    "measTypeName",
+    "psrId",
+    "psrType",
+    "pt",
+    "source",
+    "tFactor",
+    "telemetryValue"
+   ],
+   "timestamp_max": "2026-08-25 16:30:00",
+   "timestamp_min": "2026-08-25 16:30:00",
+   "unique_timestamps": 1,
+   "zero_values": 8
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "asset_ids": [
+    "3812ac8dba94ce060378b9a460017a380dc6481b0e"
+   ],
+   "equipment_type_code": [
+    "0401005"
+   ],
+   "filename": "0401005-\u67f1\u4e0a\u65ad\u8def\u5668\u5386\u53f2.txt",
+   "interval_max": 5.0,
+   "interval_median": 5.0,
+   "interval_min": 5.0,
+   "measurement_codes": [
+    "A_phsA",
+    "A_phsB",
+    "A_phsC",
+    "PhV_phsA",
+    "PhV_phsB",
+    "PhV_phsC",
+    "TotVar",
+    "TotW"
+   ],
+   "null_values": 0,
+   "point_count": 2312,
+   "point_keys": [
+    "dataTime",
+    "measValue",
+    "timeInterval",
+    "timeUnit"
+   ],
+   "record_count": 8,
+   "record_keys": [
+    "locationType",
+    "measPointId",
+    "measTypeCode",
+    "measTypeName",
+    "psrId",
+    "psrType",
+    "source",
+    "telemetryValue"
+   ],
+   "timestamp_max": "2026-08-25 00:00:00",
+   "timestamp_min": "2026-08-24 00:00:00",
+   "unique_timestamps": 289,
+   "zero_values": 2223
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "asset_ids": [
+    "28DKX-3681"
+   ],
+   "equipment_type_code": [
+    "0403000"
+   ],
+   "filename": "0403000-\u9988\u7ebf.txt",
+   "interval_max": null,
+   "interval_median": null,
+   "interval_min": null,
+   "measurement_codes": [
+    "A_phsA",
+    "A_phsB",
+    "A_phsC",
+    "PhV_phsA",
+    "PhV_phsB",
+    "PhV_phsC",
+    "TotVar",
+    "TotW"
+   ],
+   "null_values": 0,
+   "point_count": 8,
+   "point_keys": [
+    "dataTime",
+    "measValue"
+   ],
+   "record_count": 8,
+   "record_keys": [
+    "locationType",
+    "measPointId",
+    "measTypeCode",
+    "measTypeName",
+    "psrId",
+    "psrType",
+    "source",
+    "telemetryValue"
+   ],
+   "timestamp_max": "2026-08-25 16:35:00",
+   "timestamp_min": "2026-08-25 16:35:00",
+   "unique_timestamps": 1,
+   "zero_values": 5
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "asset_ids": [
+    "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294"
+   ],
+   "equipment_type_code": [
+    "0408001"
+   ],
+   "filename": "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+   "interval_max": null,
+   "interval_median": null,
+   "interval_min": null,
+   "measurement_codes": [
+    "A_phsA",
+    "A_phsB",
+    "A_phsC",
+    "PhVAr_phsA",
+    "PhVAr_phsB",
+    "PhVAr_phsC",
+    "PhV_phsA",
+    "PhV_phsB",
+    "PhV_phsC",
+    "PhW_phsA",
+    "PhW_phsB",
+    "PhW_phsC",
+    "TotVar",
+    "TotW"
+   ],
+   "null_values": 0,
+   "point_count": 14,
+   "point_keys": [
+    "dataTime",
+    "measValue"
+   ],
+   "record_count": 14,
+   "record_keys": [
+    "locationType",
+    "measPointId",
+    "measTypeCode",
+    "measTypeName",
+    "psrId",
+    "psrType",
+    "source",
+    "telemetryValue"
+   ],
+   "timestamp_max": "2026-08-25 14:45:00",
+   "timestamp_min": "2026-08-25 14:45:00",
+   "unique_timestamps": 1,
+   "zero_values": 1
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "asset_ids": [
+    "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294"
+   ],
+   "equipment_type_code": [
+    "0408001"
+   ],
+   "filename": "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt",
+   "interval_max": 15.0,
+   "interval_median": 15.0,
+   "interval_min": 15.0,
+   "measurement_codes": [
+    "A_phsA",
+    "A_phsB",
+    "A_phsC",
+    "PhVAr_phsA",
+    "PhVAr_phsB",
+    "PhVAr_phsC",
+    "PhV_phsA",
+    "PhV_phsB",
+    "PhV_phsC",
+    "PhW_phsA",
+    "PhW_phsB",
+    "PhW_phsC",
+    "TotVar",
+    "TotW"
+   ],
+   "null_values": 0,
+   "point_count": 1358,
+   "point_keys": [
+    "dataTime",
+    "measValue",
+    "timeInterval",
+    "timeUnit"
+   ],
+   "record_count": 14,
+   "record_keys": [
+    "locationType",
+    "measPointId",
+    "measTypeCode",
+    "measTypeName",
+    "psrId",
+    "psrType",
+    "source",
+    "telemetryValue"
+   ],
+   "timestamp_max": "2026-08-25 00:00:00",
+   "timestamp_min": "2026-08-24 00:00:00",
+   "unique_timestamps": 97,
+   "zero_values": 6
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "asset_ids": [
+    "182d2b68-8127-48c3-baa9-555e2532ca01",
+    "3f422fb6ea8a579e4b7fc3e44a01803f40d7384792",
+    "71f8d272-eddf-41b7-baca-fa5045688e1c",
+    "86247F1B-CB06-BEB6-A9ED-5DBA61AA9804",
+    "94c11688-3929-48a7-8a52-b431586832ad",
+    "A1322425-E748-388E-7046-58036F36E396",
+    "SBID0000001FA6A0066C714512A7ECD71A77830519",
+    "SBID00000094B4F46D9E4C4CDF9FA0B0A328EB6C33",
+    "SBID000000F4DB5FE0C24E4E1589EE1F273F0C54CE"
+   ],
+   "equipment_type_code": [
+    "0408003"
+   ],
+   "filename": "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+   "interval_max": null,
+   "interval_median": null,
+   "interval_min": null,
+   "measurement_codes": [
+    "A_phsA",
+    "A_phsB",
+    "A_phsC",
+    "PhV_phsA",
+    "PhV_phsB",
+    "PhV_phsC",
+    "TotVar",
+    "TotW"
+   ],
+   "null_values": 0,
+   "point_count": 72,
+   "point_keys": [
+    "dataTime",
+    "measValue"
+   ],
+   "record_count": 72,
+   "record_keys": [
+    "astId",
+    "astType",
+    "consNo",
+    "consType",
+    "ct",
+    "locationType",
+    "measPointId",
+    "measTypeCode",
+    "measTypeName",
+    "psrId",
+    "psrType",
+    "pt",
+    "source",
+    "tFactor",
+    "telemetryValue"
+   ],
+   "timestamp_max": "2026-05-29 14:40:00",
+   "timestamp_min": "2026-05-29 14:40:00",
+   "unique_timestamps": 1,
+   "zero_values": 72
+  }
+ ],
+ "separation_rule": "Equipment classes are never pooled; shared codes do not imply a shared population."
+}

@@ -1,0 +1,489 @@
+{
+  "items": [
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "engineering interpretation of A_phsA values",
+        "any threshold or limit applied to A_phsA"
+      ],
+      "evidence_location": "data/en/calc_rules.md (measurement-info sheet: low-side voltage V, current A, high-side fill x25); data/en/telemetry_source_dictionary.md (label mapping)",
+      "evidence_required": "Instrument/source documentation stating measurand, unit, and scaling for A_phsA.",
+      "id": "EV-CODE-A_phsA",
+      "measurement_code": "A_phsA",
+      "question": "What does A_phsA (source label Phase A current) measure, in what unit and scaling?",
+      "reviewer_required": "domain reviewer (metering/transformer)",
+      "status": "evidence_pending",
+      "topic": "measurement_code"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "engineering interpretation of A_phsB values",
+        "any threshold or limit applied to A_phsB"
+      ],
+      "evidence_location": "data/en/calc_rules.md (measurement-info sheet: low-side voltage V, current A, high-side fill x25); data/en/telemetry_source_dictionary.md (label mapping)",
+      "evidence_required": "Instrument/source documentation stating measurand, unit, and scaling for A_phsB.",
+      "id": "EV-CODE-A_phsB",
+      "measurement_code": "A_phsB",
+      "question": "What does A_phsB (source label Phase B current) measure, in what unit and scaling?",
+      "reviewer_required": "domain reviewer (metering/transformer)",
+      "status": "evidence_pending",
+      "topic": "measurement_code"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "engineering interpretation of A_phsC values",
+        "any threshold or limit applied to A_phsC"
+      ],
+      "evidence_location": "data/en/calc_rules.md (measurement-info sheet: low-side voltage V, current A, high-side fill x25); data/en/telemetry_source_dictionary.md (label mapping)",
+      "evidence_required": "Instrument/source documentation stating measurand, unit, and scaling for A_phsC.",
+      "id": "EV-CODE-A_phsC",
+      "measurement_code": "A_phsC",
+      "question": "What does A_phsC (source label Phase C current) measure, in what unit and scaling?",
+      "reviewer_required": "domain reviewer (metering/transformer)",
+      "status": "evidence_pending",
+      "topic": "measurement_code"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "engineering interpretation of PhV_phsA values",
+        "any threshold or limit applied to PhV_phsA"
+      ],
+      "evidence_location": "data/en/calc_rules.md (measurement-info sheet: low-side voltage V, current A, high-side fill x25); data/en/telemetry_source_dictionary.md (label mapping)",
+      "evidence_required": "Instrument/source documentation stating measurand, unit, and scaling for PhV_phsA.",
+      "id": "EV-CODE-PhV_phsA",
+      "measurement_code": "PhV_phsA",
+      "question": "What does PhV_phsA (source label Phase A voltage) measure, in what unit and scaling?",
+      "reviewer_required": "domain reviewer (metering/transformer)",
+      "status": "evidence_pending",
+      "topic": "measurement_code"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "engineering interpretation of PhV_phsB values",
+        "any threshold or limit applied to PhV_phsB"
+      ],
+      "evidence_location": "data/en/calc_rules.md (measurement-info sheet: low-side voltage V, current A, high-side fill x25); data/en/telemetry_source_dictionary.md (label mapping)",
+      "evidence_required": "Instrument/source documentation stating measurand, unit, and scaling for PhV_phsB.",
+      "id": "EV-CODE-PhV_phsB",
+      "measurement_code": "PhV_phsB",
+      "question": "What does PhV_phsB (source label Phase B voltage) measure, in what unit and scaling?",
+      "reviewer_required": "domain reviewer (metering/transformer)",
+      "status": "evidence_pending",
+      "topic": "measurement_code"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "engineering interpretation of PhV_phsC values",
+        "any threshold or limit applied to PhV_phsC"
+      ],
+      "evidence_location": "data/en/calc_rules.md (measurement-info sheet: low-side voltage V, current A, high-side fill x25); data/en/telemetry_source_dictionary.md (label mapping)",
+      "evidence_required": "Instrument/source documentation stating measurand, unit, and scaling for PhV_phsC.",
+      "id": "EV-CODE-PhV_phsC",
+      "measurement_code": "PhV_phsC",
+      "question": "What does PhV_phsC (source label Phase C voltage) measure, in what unit and scaling?",
+      "reviewer_required": "domain reviewer (metering/transformer)",
+      "status": "evidence_pending",
+      "topic": "measurement_code"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "engineering interpretation of PhW_phsA values",
+        "any threshold or limit applied to PhW_phsA"
+      ],
+      "evidence_location": "data/en/telemetry_source_dictionary.md (label mapping verified 14/14 records; no unit key in raw points)",
+      "evidence_required": "Instrument/source documentation stating measurand, unit, and scaling for PhW_phsA.",
+      "id": "EV-CODE-PhW_phsA",
+      "measurement_code": "PhW_phsA",
+      "question": "What does PhW_phsA (source label Phase A active power) measure, in what unit and scaling?",
+      "reviewer_required": "domain reviewer (metering/transformer)",
+      "status": "evidence_pending",
+      "topic": "measurement_code"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "engineering interpretation of PhW_phsB values",
+        "any threshold or limit applied to PhW_phsB"
+      ],
+      "evidence_location": "data/en/telemetry_source_dictionary.md (label mapping verified 14/14 records; no unit key in raw points)",
+      "evidence_required": "Instrument/source documentation stating measurand, unit, and scaling for PhW_phsB.",
+      "id": "EV-CODE-PhW_phsB",
+      "measurement_code": "PhW_phsB",
+      "question": "What does PhW_phsB (source label Phase B active power) measure, in what unit and scaling?",
+      "reviewer_required": "domain reviewer (metering/transformer)",
+      "status": "evidence_pending",
+      "topic": "measurement_code"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "engineering interpretation of PhW_phsC values",
+        "any threshold or limit applied to PhW_phsC"
+      ],
+      "evidence_location": "data/en/telemetry_source_dictionary.md (label mapping verified 14/14 records; no unit key in raw points)",
+      "evidence_required": "Instrument/source documentation stating measurand, unit, and scaling for PhW_phsC.",
+      "id": "EV-CODE-PhW_phsC",
+      "measurement_code": "PhW_phsC",
+      "question": "What does PhW_phsC (source label Phase C active power) measure, in what unit and scaling?",
+      "reviewer_required": "domain reviewer (metering/transformer)",
+      "status": "evidence_pending",
+      "topic": "measurement_code"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "engineering interpretation of PhVAr_phsA values",
+        "any threshold or limit applied to PhVAr_phsA"
+      ],
+      "evidence_location": "data/en/telemetry_source_dictionary.md (label mapping verified 14/14 records; no unit key in raw points)",
+      "evidence_required": "Instrument/source documentation stating measurand, unit, scaling, and sign convention for PhVAr_phsA.",
+      "id": "EV-CODE-PhVAr_phsA",
+      "measurement_code": "PhVAr_phsA",
+      "question": "What does PhVAr_phsA (source label Phase A reactive power) measure, in what unit, scaling, and sign convention?",
+      "reviewer_required": "domain reviewer (metering/transformer)",
+      "status": "evidence_pending",
+      "topic": "measurement_code"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "engineering interpretation of PhVAr_phsB values",
+        "any threshold or limit applied to PhVAr_phsB"
+      ],
+      "evidence_location": "data/en/telemetry_source_dictionary.md (label mapping verified 14/14 records; no unit key in raw points)",
+      "evidence_required": "Instrument/source documentation stating measurand, unit, scaling, and sign convention for PhVAr_phsB.",
+      "id": "EV-CODE-PhVAr_phsB",
+      "measurement_code": "PhVAr_phsB",
+      "question": "What does PhVAr_phsB (source label Phase B reactive power) measure, in what unit, scaling, and sign convention?",
+      "reviewer_required": "domain reviewer (metering/transformer)",
+      "status": "evidence_pending",
+      "topic": "measurement_code"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "engineering interpretation of PhVAr_phsC values",
+        "any threshold or limit applied to PhVAr_phsC"
+      ],
+      "evidence_location": "data/en/telemetry_source_dictionary.md (label mapping verified 14/14 records; no unit key in raw points)",
+      "evidence_required": "Instrument/source documentation stating measurand, unit, scaling, and sign convention for PhVAr_phsC.",
+      "id": "EV-CODE-PhVAr_phsC",
+      "measurement_code": "PhVAr_phsC",
+      "question": "What does PhVAr_phsC (source label Phase C reactive power) measure, in what unit, scaling, and sign convention?",
+      "reviewer_required": "domain reviewer (metering/transformer)",
+      "status": "evidence_pending",
+      "topic": "measurement_code"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "engineering interpretation of TotW values",
+        "any threshold or limit applied to TotW"
+      ],
+      "evidence_location": "data/en/telemetry_source_dictionary.md (label mapping verified 14/14 records; no unit key in raw points)",
+      "evidence_required": "Instrument/source documentation stating measurand, unit, scaling, and aggregation definition for TotW.",
+      "id": "EV-CODE-TotW",
+      "measurement_code": "TotW",
+      "question": "What does TotW (source label Active power (P)) measure, in what unit and scaling, and how does it relate to the phase readings?",
+      "reviewer_required": "domain reviewer (metering/transformer)",
+      "status": "evidence_pending",
+      "topic": "measurement_code"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "engineering interpretation of TotVar values",
+        "any threshold or limit applied to TotVar"
+      ],
+      "evidence_location": "data/en/telemetry_source_dictionary.md (label mapping verified 14/14 records; no unit key in raw points)",
+      "evidence_required": "Instrument/source documentation stating measurand, unit, scaling, sign convention, and aggregation definition for TotVar.",
+      "id": "EV-CODE-TotVar",
+      "measurement_code": "TotVar",
+      "question": "What does TotVar (source label Reactive power (Q)) measure, in what unit, scaling, sign convention, and aggregation definition?",
+      "reviewer_required": "domain reviewer (metering/transformer)",
+      "status": "evidence_pending",
+      "topic": "measurement_code"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "UTC conversion",
+        "cross-source time joins",
+        "forecasting at clock-time horizons"
+      ],
+      "evidence_location": null,
+      "evidence_required": "Written confirmation from the data owner stating the timezone/offset of dataTime values.",
+      "id": "EV-TIME-TIMEZONE",
+      "measurement_code": null,
+      "question": "In what timezone (or offset) are the source dataTime wall-clock strings expressed?",
+      "reviewer_required": "data owner",
+      "status": "unverified",
+      "topic": "temporal_semantics"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "equal-spacing assumptions",
+        "gap imputation",
+        "resampling"
+      ],
+      "evidence_location": null,
+      "evidence_required": "Source-system documentation defining timeInterval/timeUnit encodings and sampling behavior.",
+      "id": "EV-TIME-INTERVAL",
+      "measurement_code": null,
+      "question": "What do the source timeInterval and timeUnit point metadata mean, and what is the committed sampling cadence?",
+      "reviewer_required": "data owner",
+      "status": "unverified",
+      "topic": "temporal_semantics"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "treating assessments as asset-specific rather than sample-specific"
+      ],
+      "evidence_location": "data/en/ledger_dictionary.md (ledger id 6153: psr_id equals workspace target asset; model S11-M-400/10, 10 kV, in service)",
+      "evidence_required": "Equipment record or asset-owner confirmation linking psrId to the target transformer class.",
+      "id": "EV-ASSET-IDENTITY",
+      "measurement_code": null,
+      "question": "Is asset 042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294 the intended distribution-transformer target, and is its class code 0408001 authoritative?",
+      "reviewer_required": "asset owner",
+      "status": "evidence_pending",
+      "topic": "asset_identity"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "any oil/insulation condition assessment",
+        "oil-related diagnostic rules"
+      ],
+      "evidence_location": "data/en/ledger_dictionary.md (ledger id 6153: insulation code 2 = oil-immersed within class 0302 namespace; needs domain confirmation)",
+      "evidence_required": "Nameplate record, equipment record, or qualified domain-reviewer confirmation of construction type.",
+      "id": "EV-ASSET-OIL",
+      "measurement_code": null,
+      "question": "Is the target asset oil-immersed?",
+      "reviewer_required": "qualified transformer domain reviewer",
+      "status": "evidence_pending",
+      "topic": "asset_construction"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "using astId for asset linkage or filtering"
+      ],
+      "evidence_location": "ledger usage observed: ast_id equals psr_id on target row (meaning still undefined)",
+      "evidence_required": "Source-system field dictionary defining astId.",
+      "id": "EV-META-astId",
+      "measurement_code": null,
+      "question": "What does the optional source key astId mean?",
+      "reviewer_required": "data owner",
+      "status": "evidence_pending",
+      "topic": "source_metadata"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "using astType for equipment classification"
+      ],
+      "evidence_location": "ledger usage observed: ast_type 0302 on target row; code namespaces conditioned by ast_type (meaning still undefined)",
+      "evidence_required": "Source-system field dictionary defining astType.",
+      "id": "EV-META-astType",
+      "measurement_code": null,
+      "question": "What does the optional source key astType mean?",
+      "reviewer_required": "data owner",
+      "status": "evidence_pending",
+      "topic": "source_metadata"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "using consNo for consumer linkage"
+      ],
+      "evidence_location": null,
+      "evidence_required": "Source-system field dictionary defining consNo.",
+      "id": "EV-META-consNo",
+      "measurement_code": null,
+      "question": "What does the optional source key consNo mean?",
+      "reviewer_required": "data owner",
+      "status": "unverified",
+      "topic": "source_metadata"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "using consType for classification"
+      ],
+      "evidence_location": null,
+      "evidence_required": "Source-system field dictionary defining consType.",
+      "id": "EV-META-consType",
+      "measurement_code": null,
+      "question": "What does the optional source key consType mean?",
+      "reviewer_required": "data owner",
+      "status": "unverified",
+      "topic": "source_metadata"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "rescaling voltage readings",
+        "engineering interpretation of voltage magnitudes"
+      ],
+      "evidence_location": null,
+      "evidence_required": "Source-system field dictionary defining pt and its relation to exported values.",
+      "id": "EV-META-pt",
+      "measurement_code": null,
+      "question": "What does the optional source key pt mean (e.g. potential-transformer ratio), and does it scale the exported values?",
+      "reviewer_required": "data owner",
+      "status": "unverified",
+      "topic": "source_metadata"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "rescaling current readings",
+        "engineering interpretation of current magnitudes"
+      ],
+      "evidence_location": null,
+      "evidence_required": "Source-system field dictionary defining ct and its relation to exported values.",
+      "id": "EV-META-ct",
+      "measurement_code": null,
+      "question": "What does the optional source key ct mean (e.g. current-transformer ratio), and does it scale the exported values?",
+      "reviewer_required": "data owner",
+      "status": "unverified",
+      "topic": "source_metadata"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "applying tFactor to any measurement"
+      ],
+      "evidence_location": null,
+      "evidence_required": "Source-system field dictionary defining tFactor and its relation to exported values.",
+      "id": "EV-META-tFactor",
+      "measurement_code": null,
+      "question": "What does the optional source key tFactor mean, and does it transform the exported values?",
+      "reviewer_required": "data owner",
+      "status": "unverified",
+      "topic": "source_metadata"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "treating zeros as outages",
+        "excluding zeros from statistics"
+      ],
+      "evidence_location": null,
+      "evidence_required": "Metering documentation or domain-reviewer ruling on zero-value semantics per code.",
+      "id": "EV-ZERO-READINGS",
+      "measurement_code": null,
+      "question": "Do zero readings indicate genuine zero load/flow, outages, or sensor floors?",
+      "reviewer_required": "domain reviewer (metering/transformer)",
+      "status": "unverified",
+      "topic": "value_interpretation"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "leading/lagging interpretation",
+        "power-factor derivation"
+      ],
+      "evidence_location": null,
+      "evidence_required": "Metering documentation stating the reactive-power sign convention.",
+      "id": "EV-REACTIVE-SIGN",
+      "measurement_code": null,
+      "question": "What sign convention do negative reactive-power values follow?",
+      "reviewer_required": "domain reviewer (metering/transformer)",
+      "status": "unverified",
+      "topic": "value_interpretation"
+    },
+    {
+      "applicability": "class_level",
+      "approval": null,
+      "blocks": [
+        "any diagnostic threshold",
+        "any rule-based fault classification"
+      ],
+      "evidence_location": "data/en/calc_rules.md (candidate state rules with thresholds, 3 ambiguous passages) + data/en/daozhe_guide.md (DL/T 2106-2020 section 9.8/Table A.8; telemetry streams not listed state quantities; applicability unreviewed)",
+      "evidence_required": "Approved rule set with standard title, edition, clause, applicability, author, and approver sign-off.",
+      "id": "EV-RULES-APPROVED",
+      "measurement_code": null,
+      "question": "Which approved engineering rules (standard edition + clause) may be applied to these measurements?",
+      "reviewer_required": "qualified transformer domain reviewer",
+      "status": "evidence_pending",
+      "topic": "engineering_rules"
+    },
+    {
+      "applicability": "target_asset",
+      "approval": null,
+      "blocks": [
+        "supervised model training",
+        "failure prediction",
+        "anomaly-label evaluation"
+      ],
+      "evidence_location": "data/en/defect_records_dictionary.md + defect_library_subset.md (12 class rows, 7 linked standard IDs; 0 rows for target asset; container linkage unverified)",
+      "evidence_required": "Work-order / failure-event records with asset IDs and timestamps, verified by the asset owner.",
+      "id": "EV-OUTCOMES-LABELED",
+      "measurement_code": null,
+      "question": "Are there timestamped, verified fault, maintenance, or failure outcomes for these assets?",
+      "reviewer_required": "asset owner",
+      "status": "evidence_pending",
+      "topic": "outcome_labels"
+    },
+    {
+      "applicability": "class_level",
+      "approval": null,
+      "blocks": [
+        "train/validation/test design",
+        "generalization claims"
+      ],
+      "evidence_location": null,
+      "evidence_required": "Coverage inventory showing multiple labeled assets with sufficient history each.",
+      "id": "EV-COVERAGE-EVAL",
+      "measurement_code": null,
+      "question": "Do enough independent assets and time coverage exist to support time-split and asset-grouped evaluation?",
+      "reviewer_required": "reliability engineer",
+      "status": "unverified",
+      "topic": "evaluation_coverage"
+    }
+  ],
+  "register_version": "1.0.0",
+  "status_rule": "No item may carry status verified without evidence_location and approval{reviewed_by, reviewed_at}. The validator enforces this; nothing here is verified.",
+  "status_values": [
+    "unverified",
+    "evidence_pending",
+    "under_review",
+    "verified"
+  ]
+}

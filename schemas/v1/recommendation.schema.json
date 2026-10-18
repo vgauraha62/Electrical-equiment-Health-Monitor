@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/v1/recommendation.schema.json",
+  "title": "Recommendation",
+  "description": "Reviewer-facing recommendation. Never an autonomous control command or validated maintenance instruction in this PoC.",
+  "type": "object",
+  "required": ["asset_id", "action_class", "rationale", "evidence_ids", "created_at", "data_origin", "schema_version"],
+  "properties": {
+    "asset_id": {"type": "string", "minLength": 1},
+    "action_class": {"type": "string", "enum": ["inspect", "request_data", "review", "no_action_for_sample"]},
+    "rationale": {"type": "string", "minLength": 1},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}},
+    "knowledge_chunk_ids": {"type": "array", "items": {"type": "string"}},
+    "rule_refs": {"type": "array", "items": {"type": "string"}},
+    "reviewer_outcome": {"type": ["string", "null"], "enum": ["review", "request_data", "no_further_action_for_sample", null]},
+    "created_at": {"type": "string"},
+    "data_origin": {"type": "string", "enum": ["observed", "synthetic"]},
+    "schema_version": {"type": "string", "const": "1.0.0"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,554 @@
+{
+ "report_version": "1.0.0",
+ "rows": [
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-CODE-A_phsA",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 1,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "domain reviewer (metering/transformer) review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-CODE-A_phsB",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 1,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "domain reviewer (metering/transformer) review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-CODE-A_phsC",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 1,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "domain reviewer (metering/transformer) review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-CODE-PhVAr_phsA",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 1,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "domain reviewer (metering/transformer) review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-CODE-PhVAr_phsB",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 1,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "domain reviewer (metering/transformer) review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-CODE-PhVAr_phsC",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 1,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "domain reviewer (metering/transformer) review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-CODE-PhV_phsA",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 1,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "domain reviewer (metering/transformer) review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-CODE-PhV_phsB",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 1,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "domain reviewer (metering/transformer) review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-CODE-PhV_phsC",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 1,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "domain reviewer (metering/transformer) review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-CODE-PhW_phsA",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 1,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "domain reviewer (metering/transformer) review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-CODE-PhW_phsB",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 1,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "domain reviewer (metering/transformer) review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-CODE-PhW_phsC",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 1,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "domain reviewer (metering/transformer) review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-CODE-TotVar",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 1,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "domain reviewer (metering/transformer) review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-CODE-TotW",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 1,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "domain reviewer (metering/transformer) review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-TIME-INTERVAL",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 2,
+   "provenance_complete": null,
+   "register_status": "unverified",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "data owner review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-TIME-TIMEZONE",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 2,
+   "provenance_complete": null,
+   "register_status": "unverified",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "data owner review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-ASSET-IDENTITY",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 3,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "asset owner review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-ASSET-OIL",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 3,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "qualified transformer domain reviewer review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-RULES-APPROVED",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 4,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "qualified transformer domain reviewer review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-OUTCOMES-LABELED",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 5,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "asset owner review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-COVERAGE-EVAL",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 6,
+   "provenance_complete": null,
+   "register_status": "unverified",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "reliability engineer review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-META-astId",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 6,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "data owner review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-META-astType",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 6,
+   "provenance_complete": null,
+   "register_status": "evidence_pending",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "data owner review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-META-consNo",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 6,
+   "provenance_complete": null,
+   "register_status": "unverified",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "data owner review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-META-consType",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 6,
+   "provenance_complete": null,
+   "register_status": "unverified",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "data owner review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-META-ct",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 6,
+   "provenance_complete": null,
+   "register_status": "unverified",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "data owner review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-META-pt",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 6,
+   "provenance_complete": null,
+   "register_status": "unverified",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "data owner review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-META-tFactor",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 6,
+   "provenance_complete": null,
+   "register_status": "unverified",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "data owner review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-REACTIVE-SIGN",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 6,
+   "provenance_complete": null,
+   "register_status": "unverified",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "domain reviewer (metering/transformer) review when evidence arrives"
+   ]
+  },
+  {
+   "answers_question": null,
+   "contradictions": [],
+   "evidence_id": "EV-ZERO-READINGS",
+   "lifecycle_state": "drafted",
+   "missing_fields": [
+    "response itself"
+   ],
+   "priority": 6,
+   "provenance_complete": null,
+   "register_status": "unverified",
+   "request_sent": false,
+   "responses_received": 0,
+   "reviewer_actions": [
+    "await dispatch decision",
+    "domain reviewer (metering/transformer) review when evidence arrives"
+   ]
+  }
+ ],
+ "summary": {
+  "lifecycle_states": [
+   "drafted"
+  ],
+  "note": "States derive from dispatch-log and intake records only.",
+  "requests": 30,
+  "requests_sent": 0,
+  "responses_received": 0
+ }
+}

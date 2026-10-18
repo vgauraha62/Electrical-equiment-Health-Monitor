@@ -1,0 +1,157 @@
+{
+ "equipment": {
+  "exact_id_matches": 2,
+  "ledger_ids": 3811,
+  "match_note": "An exact ID match is a data link, not proof of physical identity.",
+  "telemetry_ids": 13,
+  "telemetry_matched": 2,
+  "telemetry_observations": 5970,
+  "telemetry_unmatched": 11
+ },
+ "inventory_version": "lineage-inventory-v1",
+ "retrieval_manifest": {
+  "fields": [
+   "source_id",
+   "locator",
+   "citation",
+   "translation_status",
+   "review_status",
+   "relationship_type"
+  ],
+  "note": "Local-only shape for future retrieval; no cloud calls.",
+  "source_types": [
+   "telemetry",
+   "equipment_profile",
+   "defect_record",
+   "knowledge_document"
+  ]
+ },
+ "sources": [
+  {
+   "family": "telemetry inputs (canonical runtime)",
+   "files": [
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+    "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668.txt",
+    "0401005-\u67f1\u4e0a\u65ad\u8def\u5668\u5386\u53f2.txt",
+    "0403000-\u9988\u7ebf.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+    "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt",
+    "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt"
+   ],
+   "observations": 5970,
+   "provenance": "data/input/telemetry/*.json; checksums in data/output/manifest.json",
+   "records": 152,
+   "retrieval": "served",
+   "review_status": "unreviewed",
+   "status": "canonical runtime input",
+   "translation_status": "labels_translated_upstream"
+  },
+  {
+   "family": "translated telemetry equivalents",
+   "files": [
+    "data_english/measurement/*.txt (8 files)"
+   ],
+   "observations": 5970,
+   "provenance": "data_english/measurement/; value parity verified, 0 mismatches",
+   "records": 152,
+   "retrieval": "excluded",
+   "review_status": "unreviewed",
+   "status": "duplicate equivalent \u2014 never counted as additional observations",
+   "translation_status": "translated_draft"
+  },
+  {
+   "family": "equipment ledger + catalog",
+   "files": [
+    "equipment_ledger.xlsx",
+    "data/output/equipment_catalog.json"
+   ],
+   "observations": null,
+   "provenance": "ledger workbook sha in catalog source record",
+   "records": 3811,
+   "retrieval": "profiles only",
+   "review_status": "approved",
+   "status": "context for exact-ID matches only",
+   "translation_review": {
+    "decision": "approved",
+    "excludes": [
+     "physical asset identity",
+     "engineering-rule applicability",
+     "measurement units",
+     "outcome labels",
+     "time semantics"
+    ],
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "project_owner",
+    "reviewer_role": "equipment ledger data owner",
+    "scope": "translation accuracy of the ledger fields only (column meanings, code-table and date renderings)"
+   },
+   "translation_status": "reviewed"
+  },
+  {
+   "family": "defect records and standard library",
+   "files": [
+    "defect_records.xlsx",
+    "defect_description_standard_library.xlsx"
+   ],
+   "observations": null,
+   "provenance": "data_english headers/dictionaries",
+   "records": null,
+   "retrieval": "excluded by default",
+   "review_status": "unreviewed",
+   "status": "reference only; unfinished/unreviewed \u2014 excluded from retrieval",
+   "translation_status": "partial_draft"
+  },
+  {
+   "family": "guides and standards",
+   "files": [
+    "evaluation guide translation",
+    "scanned operating standard"
+   ],
+   "observations": null,
+   "provenance": "data_english guide markdowns",
+   "records": null,
+   "retrieval": "excluded by default",
+   "review_status": "unreviewed",
+   "status": "reference only; scanned standard blocked (no OCR approval)",
+   "translation_status": "partial_draft"
+  },
+  {
+   "family": "source archives",
+   "files": [
+    "data/source_archive/originals/*"
+   ],
+   "observations": null,
+   "provenance": "sha256 recorded at vendor time",
+   "records": null,
+   "retrieval": "never",
+   "review_status": "not_applicable",
+   "status": "immutable evidence, never served",
+   "translation_status": "not_applicable"
+  },
+  {
+   "family": "generated analysis outputs",
+   "files": [
+    "statistical_baseline.json",
+    "temporal_audit.json",
+    "descriptive_analysis.json",
+    "evaluation.json"
+   ],
+   "observations": null,
+   "provenance": "reproducible scripts in scripts/",
+   "records": null,
+   "retrieval": "never",
+   "review_status": "not_applicable",
+   "status": "descriptive only; frozen where marked",
+   "translation_status": "not_applicable"
+  }
+ ],
+ "unresolved": [
+  "regulation page count: notes claim 98 pp, PDF has 49 pages",
+  "defect library completeness framing vs task caution (stays unreviewed)",
+  "telemetry label-style drift between translations (joins use codes)",
+  "model-string pinyin residue and untranslated sheet names",
+  "reviewer and OCR approvals outstanding",
+  "outcome linkage unproven (0 container-to-ledger joins)"
+ ]
+}

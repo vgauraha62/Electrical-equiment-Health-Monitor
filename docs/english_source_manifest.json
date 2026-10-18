@@ -1,0 +1,207 @@
+{
+ "english_only_boundary": "Active resources (app, static, schemas, data/en, data/output except source_archive, docs except this manifest) must contain no CJK characters; enforced by tests/test_english_only.py. Original filenames appear only in this manifest for provenance linkage.",
+ "manifest_version": "1.0.0",
+ "sources": [
+  {
+   "artifact_type": "archive",
+   "english_counterpart": null,
+   "language": "zh",
+   "notes": "Container only; members itemized below.",
+   "original_filename": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "review_status": "not_started",
+   "sha256": "eb7fd89f1da3802e41da8bd16c4e438765b2a52afd3fab0cdeeb06592c2434c6",
+   "size_bytes": 41872862,
+   "source_id": "SRC-ZIP-RELATED",
+   "translation_status": "not_started"
+  },
+  {
+   "artifact_type": "pdf_scanned",
+   "english_counterpart": null,
+   "language": "zh",
+   "notes": "Extraction blocked: scanned images on all 49 pages; tesseract/ocrmypdf absent from environment, installs not approved. No content fabricated.",
+   "original_filename": "2014\u914d\u7535\u7f51\u8fd0\u7ef4\u89c4\u7a0b\uff08\u53c2\u8003\uff09.pdf",
+   "pages": 49,
+   "review_status": "not_started",
+   "source_id": "SRC-STD-OPS-2014",
+   "translated_scope": "none",
+   "translation_completeness": "0 of 49 pages; scanned images, text extraction blocked pending OCR",
+   "translation_status": "not_started"
+  },
+  {
+   "artifact_type": "pdf_text",
+   "english_counterpart": "data/en/daozhe_guide.md",
+   "identity": "DL/T 2106-2020 industry standard (extracted title page)",
+   "language": "zh",
+   "notes": "Key finding: criteria address test/inspection quantities, not telemetry streams.",
+   "original_filename": "\u914d\u7f51\u8bbe\u5907\u72b6\u6001\u8bc4\u4ef7\u5bfc\u5219.pdf",
+   "outputs": [
+    "data/en/daozhe_guide.md",
+    "data/en/daozhe_transformer_criteria.md"
+   ],
+   "pages": 56,
+   "review_status": "not_started",
+   "source_id": "SRC-STD-EVAL-GUIDE",
+   "translated_scope": "TOC, scope/terms/method head matter, section 9.8, Table A.8 transformer criteria, section 10",
+   "translation_completeness": "transformer-relevant sections of 56 pages; remainder gap",
+   "translation_status": "partial"
+  },
+  {
+   "artifact_type": "workbook",
+   "english_counterpart": "data/en/defect_library_subset.md",
+   "language": "zh",
+   "notes": "Reporter-contact column values excluded as personal data.",
+   "original_filename": "\u7f3a\u9677\u63cf\u8ff0\u6807\u51c6\u5e93.xlsx",
+   "outputs": [
+    "data/en/defect_library_translated.json"
+   ],
+   "review_status": "not_started",
+   "sheets": {
+    "content": 23616,
+    "removed_legacy": 1678
+   },
+   "source_id": "SRC-DEFECT-LIB",
+   "translated_scope": "51 headers; 7 outcome-linked rows; class description vocabulary",
+   "translation_completeness": "headers 100%; class 0302 rows 104/104 structured; other classes out of PoC scope",
+   "translation_status": "partial"
+  },
+  {
+   "artifact_type": "workbook",
+   "english_counterpart": "data/en/defect_records_dictionary.md",
+   "language": "zh",
+   "notes": "12 distribution-transformer rows, 0 for target asset; container linkage unverified.",
+   "original_filename": "\u7f3a\u9677\u8bb0\u5f55.xlsx",
+   "outputs": [
+    "data/en/defect_records_translated.json",
+    "data/en/glossary_technical.json",
+    "scripts/translate_workbooks.py"
+   ],
+   "review_status": "not_started",
+   "sheets": {
+    "records": 1012
+   },
+   "source_id": "SRC-DEFECT-RECORDS",
+   "translated_scope": "84 headers; equipment linkage summary",
+   "translation_completeness": "1011/1011 rows structured via glossary v1 (271 entries); free-text composites segmented with offsets; personal-name columns excluded; untranslated spans flagged per row",
+   "translation_status": "translated_draft"
+  },
+  {
+   "artifact_type": "workbook",
+   "english_counterpart": "data/en/ledger_dictionary.md",
+   "language": "zh",
+   "notes": "Target asset row confirms oil-immersed name field; owner-name value excluded as personal data.",
+   "original_filename": "\u8bbe\u5907\u53f0\u8d26\u6c60.xlsx",
+   "review_status": "not_started",
+   "sheets": {
+    "ledger": 3812
+   },
+   "source_id": "SRC-LEDGER",
+   "translated_scope": "34 headers; insulation code table; target asset row",
+   "translation_completeness": "headers 100%; class code tables complete; 3810 non-target rows queued",
+   "translation_status": "partial"
+  },
+  {
+   "artifact_type": "workbook",
+   "english_counterpart": "data/en/calc_rules.md",
+   "language": "zh",
+   "notes": "Documents low-side V/A units, fill rule x25, formulas, guards, thresholds (not adopted).",
+   "original_filename": "\u8fd0\u884c\u72b6\u6001\u8ba1\u7b97\u89c4\u5219.xlsx",
+   "outputs": [
+    "data/en/calc_rules.md"
+   ],
+   "review_status": "not_started",
+   "sheets": {
+    "info": 14,
+    "state_rules": 24
+   },
+   "source_id": "SRC-CALC-RULES",
+   "translated_scope": "all rows both sheets",
+   "translation_completeness": "100% of 38 rows; 1 of 3 ambiguous passages resolved as duplication typo (pending confirmation), 2 still flagged",
+   "translation_status": "translated_draft"
+  },
+  {
+   "artifact_type": "telemetry_text",
+   "english_counterpart": "data/en/telemetry_source_dictionary.md",
+   "language": "zh",
+   "notes": "Authoritative upstream of workspace JSON inputs.",
+   "original_filename": "\u91cf\u6d4b\u6570\u636e/*.txt (8 files)",
+   "review_status": "not_started",
+   "source_id": "SRC-TELEMETRY-TXT",
+   "translated_scope": "14 code labels verified identical values 14/14 records, 1358/1358 points",
+   "translation_completeness": "labels 100%; no units present in source to translate",
+   "translation_status": "translated_draft"
+  },
+  {
+   "artifact_type": "archive",
+   "english_counterpart": null,
+   "language": "zh",
+   "notes": "Container only; members itemized below.",
+   "original_filename": "AI\u8bbe\u5907\u8bc4\u4ef7\u667a\u80fd\u4f53\u96c6\u5408.zip",
+   "review_status": "not_started",
+   "sha256": "883cb746d66d65a8f1f418af6cfecc7e3f0503f6ad2119bb68becf9f51d37ec5",
+   "size_bytes": 718463,
+   "source_id": "SRC-ZIP-AGENTS",
+   "translation_status": "not_started"
+  },
+  {
+   "artifact_type": "workbook",
+   "english_counterpart": "data/en/menu.md",
+   "language": "zh",
+   "notes": "UI design text, not engineering evidence.",
+   "original_filename": "\u667a\u80fd\u914d\u7f51\u8bbe\u5907\u72b6\u6001\u8bc4\u4ef7\u7cfb\u7edf\u529f\u80fd\u83dc\u5355.xlsx",
+   "review_status": "not_started",
+   "source_id": "SRC-AGENT-MENU",
+   "translated_scope": "all 19 content rows",
+   "translation_completeness": "100% of content rows",
+   "translation_status": "translated_draft"
+  },
+  {
+   "artifact_type": "diagrams",
+   "english_counterpart": "data/en/diagrams.md",
+   "language": "zh",
+   "notes": "Proposal sketches, not authoritative sources.",
+   "original_filename": "7 diagram PNGs + editable sources",
+   "review_status": "not_started",
+   "source_id": "SRC-AGENT-DIAGRAMS",
+   "translated_scope": "all visible labels transcribed with relationships",
+   "translation_completeness": "labels 100%; trial watermarks and XXX placeholders noted, not translated as content",
+   "translation_status": "translated_draft"
+  },
+  {
+   "artifact_type": "pdf_plot",
+   "english_counterpart": null,
+   "language": "zh",
+   "notes": "Dashboard prototype mockup; no engineering content extracted.",
+   "original_filename": "\u8bbe\u5907\u5065\u5eb7\u72b6\u6001\u8bc4\u4ef7\uff08AI\u7248\uff09.pdf",
+   "pages": 1,
+   "review_status": "not_started",
+   "sha256": "ced7937924a222a0028bd5251a0484d379497696af303c53979baf3a5d80776d",
+   "size_bytes": 318348,
+   "source_id": "SRC-PDF-HEALTH",
+   "translated_scope": "single-page UI mockup text reviewed, out of PoC scope",
+   "translation_status": "not_started"
+  },
+  {
+   "artifact_type": "generated_review",
+   "english_counterpart": null,
+   "language": "en",
+   "notes": "Third-party English PRD draft; reference only, never source evidence.",
+   "original_filename": "a360b846-9681-460e-97df-67ee81e65a21_ExportBlock-79ca2a98-3e27-48b6-9107-b67d5d6df25b.zip",
+   "review_status": "not_started",
+   "sha256": "ddabcb645f6884ea0a3ad5e2425d867c12d4e98214d6040a21ac869ce43e8200",
+   "size_bytes": 11635,
+   "source_id": "SRC-ZIP-EXPORT",
+   "translation_status": "not_started"
+  }
+ ],
+ "status_rule": "Approved requires bilingual completeness review plus domain review per docs/m1_9_evidence_workflow.md. Nothing here is approved.",
+ "status_values": [
+  "not_started",
+  "partial",
+  "translated_draft",
+  "under_review",
+  "approved"
+ ],
+ "workspace_access_gaps": [
+  "english_translation_poc_dataset.zip: referenced in task brief, absent from workspace, Downloads, and home search; recorded missing, never re-requested from user per instructions."
+ ]
+}

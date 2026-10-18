@@ -1,0 +1,43 @@
+{
+  "record_counts": {
+    "accepted": 5970,
+    "corrected": 0,
+    "duplicates": 0,
+    "quarantined": 0
+  },
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "file": "distribution_network_circuit_breaker_snapshot.json",
+      "sha256": "91dde1f857da5d5e5d731f5d3b1d4c624309801d797cbf567ee0beeccd9305fd"
+    },
+    {
+      "file": "distribution_transformer_history.json",
+      "sha256": "0488724295161583464af6b35d42ffe65e8e39b6162a69dd632c6f74d564f39f"
+    },
+    {
+      "file": "distribution_transformer_snapshot.json",
+      "sha256": "fd30a94b0b4418d7505779c01b227c55454aa6d9772565fd9ed196197a103e4d"
+    },
+    {
+      "file": "feeder_snapshot.json",
+      "sha256": "9c30686a54dea2e44cf3e61ba8e4ab214fcf567da422d1ea1813a22933ee6ae1"
+    },
+    {
+      "file": "pole_mounted_circuit_breaker_history.json",
+      "sha256": "72e400873b54579157e8c1e05858ae01357e4c3d58c6695d959678497a065c4b"
+    },
+    {
+      "file": "pole_mounted_circuit_breaker_snapshot.json",
+      "sha256": "397e83af44f6b73dac3b87a133731f3673d0fc10b064d456b102b47d3dab03ba"
+    },
+    {
+      "file": "pole_mounted_transformer_history.json",
+      "sha256": "bb976b34306a245454c52b1ea3b0dae42f19fee0ad692d31c7622663083dc122"
+    },
+    {
+      "file": "pole_mounted_transformer_snapshot.json",
+      "sha256": "de06c44a2193a643cf47742ad883ffe87544334964324745256f23e1a85e6be9"
+    }
+  ]
+}

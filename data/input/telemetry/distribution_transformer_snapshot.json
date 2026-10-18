@@ -1,0 +1,229 @@
+{
+  "code": 200,
+  "msg": "success",
+  "data": {
+    "status": "000000",
+    "errors": "success",
+    "result": {
+      "current": 1,
+      "total": 14,
+      "pages": 1,
+      "size": 14,
+      "records": [
+        {
+          "measPointId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294#0302#8000000044713087#28DKX-1860#010100010002",
+          "psrId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294",
+          "psrType": "0408001",
+          "measTypeCode": "A_phsA",
+          "measTypeName": "Phase A current",
+          "source": "5",
+          "locationType": "8000000044713087",
+          "telemetryValue": [
+            {
+              "measValue": "39.200",
+              "dataTime": "2026-08-25 14:45:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294#0302#8000000044713087#28DKX-1860#010100010003",
+          "psrId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294",
+          "psrType": "0408001",
+          "measTypeCode": "A_phsB",
+          "measTypeName": "Phase B current",
+          "source": "5",
+          "locationType": "8000000044713087",
+          "telemetryValue": [
+            {
+              "measValue": "36.80",
+              "dataTime": "2026-08-25 14:45:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294#0302#8000000044713087#28DKX-1860#010100010004",
+          "psrId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294",
+          "psrType": "0408001",
+          "measTypeCode": "A_phsC",
+          "measTypeName": "Phase C current",
+          "source": "5",
+          "locationType": "8000000044713087",
+          "telemetryValue": [
+            {
+              "measValue": "24.480",
+              "dataTime": "2026-08-25 14:45:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294#0302#8000000044713087#28DKX-1860#010100020002",
+          "psrId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294",
+          "psrType": "0408001",
+          "measTypeCode": "PhV_phsA",
+          "measTypeName": "Phase A voltage",
+          "source": "5",
+          "locationType": "8000000044713087",
+          "telemetryValue": [
+            {
+              "measValue": "229.9",
+              "dataTime": "2026-08-25 14:45:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294#0302#8000000044713087#28DKX-1860#010100020003",
+          "psrId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294",
+          "psrType": "0408001",
+          "measTypeCode": "PhV_phsB",
+          "measTypeName": "Phase B voltage",
+          "source": "5",
+          "locationType": "8000000044713087",
+          "telemetryValue": [
+            {
+              "measValue": "228.6",
+              "dataTime": "2026-08-25 14:45:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294#0302#8000000044713087#28DKX-1860#010100020004",
+          "psrId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294",
+          "psrType": "0408001",
+          "measTypeCode": "PhV_phsC",
+          "measTypeName": "Phase C voltage",
+          "source": "5",
+          "locationType": "8000000044713087",
+          "telemetryValue": [
+            {
+              "measValue": "228.5",
+              "dataTime": "2026-08-25 14:45:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294#0302#8000000044713087#28DKX-1860#010100030001",
+          "psrId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294",
+          "psrType": "0408001",
+          "measTypeCode": "TotW",
+          "measTypeName": "Active power (P)",
+          "source": "5",
+          "locationType": "8000000044713087",
+          "telemetryValue": [
+            {
+              "measValue": "21.0240",
+              "dataTime": "2026-08-25 14:45:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294#0302#8000000044713087#28DKX-1860#010100030002",
+          "psrId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294",
+          "psrType": "0408001",
+          "measTypeCode": "TotVar",
+          "measTypeName": "Reactive power (Q)",
+          "source": "5",
+          "locationType": "8000000044713087",
+          "telemetryValue": [
+            {
+              "measValue": "0.9280",
+              "dataTime": "2026-08-25 14:45:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294#0302#8000000044713087#28DKX-1860#010100030003",
+          "psrId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294",
+          "psrType": "0408001",
+          "measTypeCode": "PhW_phsA",
+          "measTypeName": "Phase A active power",
+          "source": "5",
+          "locationType": "8000000044713087",
+          "telemetryValue": [
+            {
+              "measValue": "7.8720",
+              "dataTime": "2026-08-25 14:45:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294#0302#8000000044713087#28DKX-1860#010100030004",
+          "psrId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294",
+          "psrType": "0408001",
+          "measTypeCode": "PhW_phsB",
+          "measTypeName": "Phase B active power",
+          "source": "5",
+          "locationType": "8000000044713087",
+          "telemetryValue": [
+            {
+              "measValue": "7.9840",
+              "dataTime": "2026-08-25 14:45:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294#0302#8000000044713087#28DKX-1860#010100030005",
+          "psrId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294",
+          "psrType": "0408001",
+          "measTypeCode": "PhW_phsC",
+          "measTypeName": "Phase C active power",
+          "source": "5",
+          "locationType": "8000000044713087",
+          "telemetryValue": [
+            {
+              "measValue": "5.1520",
+              "dataTime": "2026-08-25 14:45:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294#0302#8000000044713087#28DKX-1860#010100030006",
+          "psrId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294",
+          "psrType": "0408001",
+          "measTypeCode": "PhVAr_phsA",
+          "measTypeName": "Phase A reactive power",
+          "source": "5",
+          "locationType": "8000000044713087",
+          "telemetryValue": [
+            {
+              "measValue": "-0.14400",
+              "dataTime": "2026-08-25 14:45:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294#0302#8000000044713087#28DKX-1860#010100030007",
+          "psrId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294",
+          "psrType": "0408001",
+          "measTypeCode": "PhVAr_phsB",
+          "measTypeName": "Phase B reactive power",
+          "source": "5",
+          "locationType": "8000000044713087",
+          "telemetryValue": [
+            {
+              "measValue": "0",
+              "dataTime": "2026-08-25 14:45:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294#0302#8000000044713087#28DKX-1860#010100030008",
+          "psrId": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294",
+          "psrType": "0408001",
+          "measTypeCode": "PhVAr_phsC",
+          "measTypeName": "Phase C reactive power",
+          "source": "5",
+          "locationType": "8000000044713087",
+          "telemetryValue": [
+            {
+              "measValue": "1.0880",
+              "dataTime": "2026-08-25 14:45:00"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "timestamp": 1787647014873,
+  "requestTime": 1787647014834,
+  "executeTime": 39
+}

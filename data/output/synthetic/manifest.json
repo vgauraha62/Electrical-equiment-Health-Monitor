@@ -1,0 +1,80 @@
+{
+ "derived_rows": 1078,
+ "generator": "synthetic-scenarios-v1",
+ "parent_dataset": {
+  "asset_id": "042983E8-9A90-4A58-887E-5F12AE1DCE7D-97294",
+  "path": "data/output/canonical_measurements.ndjson",
+  "sha256": "fd1cb85765342dbfa55c7468c2736431c0fdb9683d5d35c449fb901b7ea7e656"
+ },
+ "partition_rule": "All variants of one scenario share a partition; never split a scenario across train/test.",
+ "scenarios": [
+  {
+   "control_code": "A_phsB",
+   "expected": "single-point flag on target only; control clean",
+   "offset": 120.0,
+   "scenario_id": "SYN-SPIKE-001",
+   "scenario_type": "spike",
+   "target_code": "A_phsA",
+   "window": [
+    30,
+    60
+   ]
+  },
+  {
+   "control_code": "A_phsB",
+   "expected": "sustained flags across the interval; control clean",
+   "offset": 30.0,
+   "scenario_id": "SYN-SHIFT-001",
+   "scenario_type": "sustained_shift",
+   "target_code": "A_phsC",
+   "window": [
+    20,
+    50
+   ]
+  },
+  {
+   "control_code": "PhW_phsB",
+   "expected": "late-interval flags as ramp exceeds baseline; control clean",
+   "noise": 0.05,
+   "scenario_id": "SYN-DRIFT-001",
+   "scenario_type": "gradual_drift",
+   "slope_per_step": 0.35,
+   "target_code": "PhW_phsA",
+   "window": [
+    10,
+    70
+   ]
+  },
+  {
+   "block": [
+    40,
+    48
+   ],
+   "control_code": "PhV_phsB",
+   "expected": "abstention on masked points; no imputed values",
+   "points": [
+    10,
+    55
+   ],
+   "scenario_id": "SYN-MISSING-001",
+   "scenario_type": "missing_data",
+   "target_code": "PhV_phsA"
+  },
+  {
+   "control_code": "A_phsB",
+   "expected": "multivariate spread flag; companion series retained",
+   "extra_codes": [
+    "A_phsC"
+   ],
+   "scale": 0.55,
+   "scenario_id": "SYN-XPHASE-001",
+   "scenario_type": "cross_phase",
+   "target_code": "A_phsA",
+   "window": [
+    25,
+    55
+   ]
+  }
+ ],
+ "seed": 18421
+}

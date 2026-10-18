@@ -1,0 +1,11 @@
+{
+  "asset_id": "asset-example",
+  "assessment_status": "descriptive_review_only",
+  "phase_current_spread_pct": null,
+  "quality_warnings": [
+    "Measurement units and scaling have not been confirmed.",
+    "No confirmed failure or maintenance outcome labels are available."
+  ],
+  "explanation": "No failure-risk estimate is produced. Review the units, data coverage, and operating context before interpreting readings.",
+  "human_review_required": true
+}

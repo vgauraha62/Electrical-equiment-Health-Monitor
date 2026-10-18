@@ -1,0 +1,556 @@
+{
+ "SYN-DRIFT-001": {
+  "control_code": "PhW_phsB",
+  "events": [
+   {
+    "code": "PhW_phsA",
+    "index": 10
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 11
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 12
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 13
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 14
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 15
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 16
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 17
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 18
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 19
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 20
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 21
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 22
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 23
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 24
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 25
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 26
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 27
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 28
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 29
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 30
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 31
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 32
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 33
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 34
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 35
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 36
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 37
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 38
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 39
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 40
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 41
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 42
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 43
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 44
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 45
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 46
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 47
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 48
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 49
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 50
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 51
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 52
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 53
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 54
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 55
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 56
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 57
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 58
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 59
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 60
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 61
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 62
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 63
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 64
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 65
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 66
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 67
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 68
+   },
+   {
+    "code": "PhW_phsA",
+    "index": 69
+   }
+  ],
+  "expected": "late-interval flags as ramp exceeds baseline; control clean"
+ },
+ "SYN-MISSING-001": {
+  "control_code": "PhV_phsB",
+  "events": [
+   {
+    "code": "PhV_phsA",
+    "index": 10
+   },
+   {
+    "code": "PhV_phsA",
+    "index": 40
+   },
+   {
+    "code": "PhV_phsA",
+    "index": 41
+   },
+   {
+    "code": "PhV_phsA",
+    "index": 42
+   },
+   {
+    "code": "PhV_phsA",
+    "index": 43
+   },
+   {
+    "code": "PhV_phsA",
+    "index": 44
+   },
+   {
+    "code": "PhV_phsA",
+    "index": 45
+   },
+   {
+    "code": "PhV_phsA",
+    "index": 46
+   },
+   {
+    "code": "PhV_phsA",
+    "index": 47
+   },
+   {
+    "code": "PhV_phsA",
+    "index": 55
+   }
+  ],
+  "expected": "abstention on masked points; no imputed values"
+ },
+ "SYN-SHIFT-001": {
+  "control_code": "A_phsB",
+  "events": [
+   {
+    "code": "A_phsC",
+    "index": 20
+   },
+   {
+    "code": "A_phsC",
+    "index": 21
+   },
+   {
+    "code": "A_phsC",
+    "index": 22
+   },
+   {
+    "code": "A_phsC",
+    "index": 23
+   },
+   {
+    "code": "A_phsC",
+    "index": 24
+   },
+   {
+    "code": "A_phsC",
+    "index": 25
+   },
+   {
+    "code": "A_phsC",
+    "index": 26
+   },
+   {
+    "code": "A_phsC",
+    "index": 27
+   },
+   {
+    "code": "A_phsC",
+    "index": 28
+   },
+   {
+    "code": "A_phsC",
+    "index": 29
+   },
+   {
+    "code": "A_phsC",
+    "index": 30
+   },
+   {
+    "code": "A_phsC",
+    "index": 31
+   },
+   {
+    "code": "A_phsC",
+    "index": 32
+   },
+   {
+    "code": "A_phsC",
+    "index": 33
+   },
+   {
+    "code": "A_phsC",
+    "index": 34
+   },
+   {
+    "code": "A_phsC",
+    "index": 35
+   },
+   {
+    "code": "A_phsC",
+    "index": 36
+   },
+   {
+    "code": "A_phsC",
+    "index": 37
+   },
+   {
+    "code": "A_phsC",
+    "index": 38
+   },
+   {
+    "code": "A_phsC",
+    "index": 39
+   },
+   {
+    "code": "A_phsC",
+    "index": 40
+   },
+   {
+    "code": "A_phsC",
+    "index": 41
+   },
+   {
+    "code": "A_phsC",
+    "index": 42
+   },
+   {
+    "code": "A_phsC",
+    "index": 43
+   },
+   {
+    "code": "A_phsC",
+    "index": 44
+   },
+   {
+    "code": "A_phsC",
+    "index": 45
+   },
+   {
+    "code": "A_phsC",
+    "index": 46
+   },
+   {
+    "code": "A_phsC",
+    "index": 47
+   },
+   {
+    "code": "A_phsC",
+    "index": 48
+   },
+   {
+    "code": "A_phsC",
+    "index": 49
+   }
+  ],
+  "expected": "sustained flags across the interval; control clean"
+ },
+ "SYN-SPIKE-001": {
+  "control_code": "A_phsB",
+  "events": [
+   {
+    "code": "A_phsA",
+    "index": 44
+   }
+  ],
+  "expected": "single-point flag on target only; control clean"
+ },
+ "SYN-XPHASE-001": {
+  "control_code": "A_phsB",
+  "events": [
+   {
+    "code": "A_phsA",
+    "index": 25
+   },
+   {
+    "code": "A_phsA",
+    "index": 26
+   },
+   {
+    "code": "A_phsA",
+    "index": 27
+   },
+   {
+    "code": "A_phsA",
+    "index": 28
+   },
+   {
+    "code": "A_phsA",
+    "index": 29
+   },
+   {
+    "code": "A_phsA",
+    "index": 30
+   },
+   {
+    "code": "A_phsA",
+    "index": 31
+   },
+   {
+    "code": "A_phsA",
+    "index": 32
+   },
+   {
+    "code": "A_phsA",
+    "index": 33
+   },
+   {
+    "code": "A_phsA",
+    "index": 34
+   },
+   {
+    "code": "A_phsA",
+    "index": 35
+   },
+   {
+    "code": "A_phsA",
+    "index": 36
+   },
+   {
+    "code": "A_phsA",
+    "index": 37
+   },
+   {
+    "code": "A_phsA",
+    "index": 38
+   },
+   {
+    "code": "A_phsA",
+    "index": 39
+   },
+   {
+    "code": "A_phsA",
+    "index": 40
+   },
+   {
+    "code": "A_phsA",
+    "index": 41
+   },
+   {
+    "code": "A_phsA",
+    "index": 42
+   },
+   {
+    "code": "A_phsA",
+    "index": 43
+   },
+   {
+    "code": "A_phsA",
+    "index": 44
+   },
+   {
+    "code": "A_phsA",
+    "index": 45
+   },
+   {
+    "code": "A_phsA",
+    "index": 46
+   },
+   {
+    "code": "A_phsA",
+    "index": 47
+   },
+   {
+    "code": "A_phsA",
+    "index": 48
+   },
+   {
+    "code": "A_phsA",
+    "index": 49
+   },
+   {
+    "code": "A_phsA",
+    "index": 50
+   },
+   {
+    "code": "A_phsA",
+    "index": 51
+   },
+   {
+    "code": "A_phsA",
+    "index": 52
+   },
+   {
+    "code": "A_phsA",
+    "index": 53
+   },
+   {
+    "code": "A_phsA",
+    "index": 54
+   }
+  ],
+  "expected": "multivariate spread flag; companion series retained"
+ }
+}

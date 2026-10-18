@@ -1,0 +1,139 @@
+{
+  "code": 200,
+  "msg": "success",
+  "data": {
+    "status": "000000",
+    "errors": "success",
+    "result": {
+      "current": 1,
+      "total": 8,
+      "pages": 1,
+      "size": 8,
+      "records": [
+        {
+          "measPointId": "28DKX-3681#dkx#100#6B01E8DB-24B2-44E2-AF73-DD34D6EAD845-00001#010100010002",
+          "psrId": "28DKX-3681",
+          "psrType": "0403000",
+          "measTypeCode": "A_phsA",
+          "measTypeName": "Phase A current",
+          "source": "4",
+          "locationType": "100",
+          "telemetryValue": [
+            {
+              "measValue": "10.000000",
+              "dataTime": "2026-08-25 16:35:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "28DKX-3681#dkx#100#6B01E8DB-24B2-44E2-AF73-DD34D6EAD845-00001#010100010003",
+          "psrId": "28DKX-3681",
+          "psrType": "0403000",
+          "measTypeCode": "A_phsB",
+          "measTypeName": "Phase B current",
+          "source": "4",
+          "locationType": "100",
+          "telemetryValue": [
+            {
+              "measValue": "0.000000",
+              "dataTime": "2026-08-25 16:35:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "28DKX-3681#dkx#100#6B01E8DB-24B2-44E2-AF73-DD34D6EAD845-00001#010100010004",
+          "psrId": "28DKX-3681",
+          "psrType": "0403000",
+          "measTypeCode": "A_phsC",
+          "measTypeName": "Phase C current",
+          "source": "4",
+          "locationType": "100",
+          "telemetryValue": [
+            {
+              "measValue": "53.000000",
+              "dataTime": "2026-08-25 16:35:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "28DKX-3681#dkx#100#6B01E8DB-24B2-44E2-AF73-DD34D6EAD845-00001#010100020002",
+          "psrId": "28DKX-3681",
+          "psrType": "0403000",
+          "measTypeCode": "PhV_phsA",
+          "measTypeName": "Phase A voltage",
+          "source": "4",
+          "locationType": "100",
+          "telemetryValue": [
+            {
+              "measValue": "0.000000",
+              "dataTime": "2026-08-25 16:35:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "28DKX-3681#dkx#100#6B01E8DB-24B2-44E2-AF73-DD34D6EAD845-00001#010100020003",
+          "psrId": "28DKX-3681",
+          "psrType": "0403000",
+          "measTypeCode": "PhV_phsB",
+          "measTypeName": "Phase B voltage",
+          "source": "4",
+          "locationType": "100",
+          "telemetryValue": [
+            {
+              "measValue": "0.000000",
+              "dataTime": "2026-08-25 16:35:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "28DKX-3681#dkx#100#6B01E8DB-24B2-44E2-AF73-DD34D6EAD845-00001#010100020004",
+          "psrId": "28DKX-3681",
+          "psrType": "0403000",
+          "measTypeCode": "PhV_phsC",
+          "measTypeName": "Phase C voltage",
+          "source": "4",
+          "locationType": "100",
+          "telemetryValue": [
+            {
+              "measValue": "0.000000",
+              "dataTime": "2026-08-25 16:35:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "28DKX-3681#dkx#100#6B01E8DB-24B2-44E2-AF73-DD34D6EAD845-00001#010100030001",
+          "psrId": "28DKX-3681",
+          "psrType": "0403000",
+          "measTypeCode": "TotW",
+          "measTypeName": "Active power (P)",
+          "source": "4",
+          "locationType": "100",
+          "telemetryValue": [
+            {
+              "measValue": "53.000000",
+              "dataTime": "2026-08-25 16:35:00"
+            }
+          ]
+        },
+        {
+          "measPointId": "28DKX-3681#dkx#100#6B01E8DB-24B2-44E2-AF73-DD34D6EAD845-00001#010100030002",
+          "psrId": "28DKX-3681",
+          "psrType": "0403000",
+          "measTypeCode": "TotVar",
+          "measTypeName": "Reactive power (Q)",
+          "source": "4",
+          "locationType": "100",
+          "telemetryValue": [
+            {
+              "measValue": "0.000000",
+              "dataTime": "2026-08-25 16:35:00"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "timestamp": 1787647183345,
+  "requestTime": 1787647183317,
+  "executeTime": 28
+}

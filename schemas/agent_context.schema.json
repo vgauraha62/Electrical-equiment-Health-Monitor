@@ -1,0 +1,406 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/agent_context.schema.json",
+  "title": "AgentContextBundle",
+  "description": "Deterministic, versioned evidence bundle (M0). Runtime validation is enforced in app/agent_contract.py; this schema documents the shape and is kept in exact sync by tests/test_agent_schema_parity.py. Every object declares additionalProperties:false.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "bundle_version", "contract_version", "asset_id", "data_origin", "asset_scope",
+    "provenance_index", "evidence_items", "descriptive_metrics", "known_gaps",
+    "unresolved_questions", "approved_knowledge", "prohibitions", "determinism",
+    "equipment_context", "bundle_digest_sha256"
+  ],
+  "properties": {
+    "bundle_version": {"type": "string"},
+    "contract_version": {"type": "string"},
+    "asset_id": {"type": "string", "minLength": 1},
+    "data_origin": {"type": "string", "const": "observed"},
+    "asset_scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "asset_id", "equipment_type_code", "observation_count",
+        "measurement_point_count", "measurement_code_count", "first_observation",
+        "last_observation", "dataset_types", "source_files", "ledger_match"
+      ],
+      "properties": {
+        "asset_id": {"type": "string"},
+        "equipment_type_code": {"type": ["string", "null"]},
+        "observation_count": {"type": "integer"},
+        "measurement_point_count": {"type": "integer"},
+        "measurement_code_count": {"type": "integer"},
+        "first_observation": {"type": "string"},
+        "last_observation": {"type": "string"},
+        "dataset_types": {"type": "array", "items": {"type": "string"}},
+        "source_files": {"type": "array", "items": {"type": "string"}},
+        "ledger_match": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["matched", "evidence_id", "locator", "profile", "reason",
+                       "translation_status", "review_status"],
+          "properties": {
+            "matched": {"type": "boolean"},
+            "evidence_id": {"type": ["string", "null"]},
+            "locator": {"type": ["object", "null"]},
+            "profile": {"type": ["object", "null"]},
+            "reason": {"type": "string"},
+            "translation_status": {"type": ["string", "null"]},
+            "review_status": {"type": ["string", "null"]}
+          }
+        }
+      }
+    },
+    "provenance_index": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence", "knowledge"],
+      "properties": {
+        "evidence": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "evidence_type", "source_file_id", "source_sha256",
+              "provenance_status", "locator", "value", "measurement_type_code",
+              "observed_at", "dataset_type"
+            ],
+            "properties": {
+              "evidence_type": {"type": "string"},
+              "source_file_id": {"type": ["string", "null"]},
+              "source_sha256": {"type": ["string", "null"]},
+              "provenance_status": {"type": "string"},
+              "locator": {"type": "object"},
+              "value": {"type": ["number", "null"]},
+              "measurement_type_code": {"type": ["string", "null"]},
+              "observed_at": {"type": "string"},
+              "dataset_type": {"type": ["string", "null"]}
+            }
+          }
+        },
+        "knowledge": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "review_status", "translation_status", "source_id", "source_uri",
+              "source_sha256", "source_version", "locator"
+            ],
+            "properties": {
+              "review_status": {"type": "string"},
+              "translation_status": {"type": "string"},
+              "source_id": {"type": ["string", "null"]},
+              "source_uri": {"type": ["string", "null"]},
+              "source_sha256": {"type": "string"},
+              "source_version": {"type": ["string", "null"]},
+              "locator": {"type": "object"}
+            }
+          }
+        }
+      }
+    },
+    "evidence_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "evidence_id", "evidence_type", "source_file_id", "source_record_index",
+          "measurement_point_id", "measurement_type_code", "dataset_type",
+          "observed_at", "value", "data_origin", "source_sha256",
+          "provenance_status", "provenance_gap", "locator", "unit_status",
+          "timestamp_timezone_status", "translation_status", "review_status"
+        ],
+        "properties": {
+          "evidence_id": {"type": "string", "minLength": 1},
+          "evidence_type": {"type": "string"},
+          "source_file_id": {"type": ["string", "null"]},
+          "source_record_index": {"type": ["integer", "null"]},
+          "measurement_point_id": {"type": ["string", "null"]},
+          "measurement_type_code": {"type": ["string", "null"]},
+          "dataset_type": {"type": ["string", "null"]},
+          "observed_at": {"type": "string"},
+          "value": {"type": ["number", "null"]},
+          "data_origin": {"type": "string"},
+          "source_sha256": {"type": ["string", "null"]},
+          "provenance_status": {"type": "string"},
+          "provenance_gap": {"type": "boolean"},
+          "locator": {"type": "object"},
+          "unit_status": {"type": "string"},
+          "timestamp_timezone_status": {"type": "string"},
+          "translation_status": {"type": ["string", "null"]},
+          "review_status": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "descriptive_metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "measurement_type_code", "observation_count", "minimum", "maximum",
+          "mean", "stdev_population", "zero_count", "zero_proportion"
+        ],
+        "properties": {
+          "measurement_type_code": {"type": "string"},
+          "observation_count": {"type": "integer"},
+          "minimum": {"type": ["number", "null"]},
+          "maximum": {"type": ["number", "null"]},
+          "mean": {"type": ["number", "null"]},
+          "stdev_population": {"type": ["number", "null"]},
+          "zero_count": {"type": "integer"},
+          "zero_proportion": {"type": ["number", "null"]}
+        }
+      }
+    },
+    "known_gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["gap_id", "kind", "statement", "evidence_ids", "register_id", "detail",
+                     "search_scope", "documentation_scope"],
+        "properties": {
+          "gap_id": {"type": "string"},
+          "kind": {"type": "string"},
+          "statement": {"type": "string"},
+          "evidence_ids": {"type": "array", "items": {"type": "string"}},
+          "register_id": {"type": ["string", "null"]},
+          "detail": {"type": ["object", "null"]},
+          "search_scope": {
+            "type": ["object", "null"],
+            "additionalProperties": false,
+            "required": ["scope_id", "description", "status", "record_count",
+                         "inventory_digest_sha256", "source_files"],
+            "properties": {
+              "scope_id": {"type": "string"},
+              "description": {"type": "string", "minLength": 1},
+              "status": {"type": "string", "enum": ["enumerated", "unavailable"]},
+              "record_count": {"type": ["integer", "null"]},
+              "inventory_digest_sha256": {"type": ["string", "null"]},
+              "source_files": {"type": "array", "items": {"type": "string"}}
+            }
+          },
+          "documentation_scope": {
+            "type": ["object", "null"],
+            "additionalProperties": false,
+            "required": ["subject", "status", "description", "inventory_source"],
+            "properties": {
+              "subject": {"type": "string",
+                          "enum": ["unit_scaling", "timestamp_timezone"]},
+              "status": {"type": "string", "enum": ["enumerated", "unavailable"]},
+              "description": {"type": "string", "minLength": 1},
+              "inventory_source": {"type": ["string", "null"]}
+            }
+          }
+        }
+      }
+    },
+    "unresolved_questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "question_id", "register_id", "question", "domain", "status",
+          "owner_role", "applicability", "blocks", "measurement_code",
+          "acquisition_evidence_id", "applies", "applies_because",
+          "related_evidence_ids", "verification_action", "evidence_specific",
+          "reason_supported", "group_id", "group_label"
+        ],
+        "properties": {
+          "question_id": {"type": "string"},
+          "register_id": {"type": "string"},
+          "question": {"type": "string"},
+          "domain": {"type": ["string", "null"]},
+          "status": {"type": "string"},
+          "owner_role": {"type": ["string", "null"]},
+          "applicability": {"type": ["string", "null"]},
+          "blocks": {"type": "array", "items": {"type": "string"}},
+          "measurement_code": {"type": ["string", "null"]},
+          "acquisition_evidence_id": {"type": "string"},
+          "applies": {"type": "boolean"},
+          "applies_because": {"type": "array", "items": {"type": "string"}},
+          "related_evidence_ids": {"type": "array", "items": {"type": "string"}},
+          "verification_action": {"type": "string"},
+          "evidence_specific": {"type": "boolean"},
+          "reason_supported": {"type": "boolean"},
+          "group_id": {"type": ["string", "null"]},
+          "group_label": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "approved_knowledge": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "chunk_id", "title", "source_id", "source_uri", "source_locator",
+          "source_version", "translation_status", "review_status",
+          "source_sha256", "provenance_status"
+        ],
+        "properties": {
+          "chunk_id": {"type": "string"},
+          "title": {"type": ["string", "null"]},
+          "source_id": {"type": ["string", "null"]},
+          "source_uri": {"type": ["string", "null"]},
+          "source_locator": {"type": ["string", "null"]},
+          "source_version": {"type": ["string", "null"]},
+          "translation_status": {"type": "string"},
+          "review_status": {"type": "string"},
+          "source_sha256": {"type": "string"},
+          "provenance_status": {"type": "string"}
+        }
+      }
+    },
+    "prohibitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["prohibition_id", "text"],
+        "properties": {
+          "prohibition_id": {"type": "string"},
+          "text": {"type": "string"}
+        }
+      }
+    },
+    "equipment_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id", "matched", "evidence_id", "locator", "source_sha256",
+        "translation_status", "review_status", "review_recorded",
+        "context_usable", "blocked_reason_code", "status_label",
+        "register_binding", "dependent_unknowns", "fields"
+      ],
+      "properties": {
+        "source_id": {"type": "string"},
+        "matched": {"type": "boolean"},
+        "evidence_id": {"type": ["string", "null"]},
+        "locator": {"type": ["object", "null"]},
+        "source_sha256": {"type": ["string", "null"]},
+        "translation_status": {"type": ["string", "null"]},
+        "review_status": {"type": ["string", "null"]},
+        "review_recorded": {"type": "boolean"},
+        "context_usable": {"type": "boolean"},
+        "blocked_reason_code": {"type": ["string", "null"]},
+        "status_label": {"type": "string"},
+        "register_binding": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "register_path", "register_version", "digest_algorithm",
+            "register_digest_sha256", "item_count", "dimension_count"
+          ],
+          "properties": {
+            "register_path": {"type": "string"},
+            "register_version": {"type": "string"},
+            "digest_algorithm": {"type": "string", "const": "sha256"},
+            "register_digest_sha256": {"type": "string"},
+            "item_count": {"type": "integer"},
+            "dimension_count": {"type": "integer"}
+          }
+        },
+        "dependent_unknowns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["dimension", "topics", "status", "register_ids",
+                         "open_register_ids"],
+            "properties": {
+              "dimension": {"type": "string"},
+              "topics": {"type": "array", "items": {"type": "string"}},
+              "status": {"type": "string",
+                         "enum": ["unknown", "supported", "not_recorded"]},
+              "register_ids": {"type": "array", "items": {"type": "string"}},
+              "open_register_ids": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "field", "column", "value", "translated", "locator",
+              "source_sha256", "translation_status", "review_status",
+              "usable_for_context", "blocked_reason_code"
+            ],
+            "properties": {
+              "field": {"type": "string", "minLength": 1},
+              "column": {"type": "string", "minLength": 1},
+              "value": {"type": ["string", "null"]},
+              "translated": {"type": ["string", "null"]},
+              "locator": {"type": ["object", "null"]},
+              "source_sha256": {"type": ["string", "null"]},
+              "translation_status": {"type": ["string", "null"]},
+              "review_status": {"type": ["string", "null"]},
+              "usable_for_context": {"type": "boolean"},
+              "blocked_reason_code": {"type": ["string", "null"]}
+            }
+          }
+        }
+      }
+    },
+    "determinism": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["input_hashes", "manifest_sources", "ordering", "digest_excludes"],
+      "properties": {
+        "input_hashes": {"type": "array"},
+        "manifest_sources": {"type": "array"},
+        "ordering": {"type": "string"},
+        "digest_excludes": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "bundle_digest_sha256": {"type": "string"}
+  },
+  "$defs": {
+    "locator_telemetry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind", "source_file_id", "record_index", "measurement_point_id",
+        "measurement_type_code", "observed_at", "dataset_type"
+      ],
+      "properties": {
+        "kind": {"type": "string", "const": "telemetry"},
+        "source_file_id": {"type": ["string", "null"]},
+        "record_index": {"type": ["integer", "null"]},
+        "measurement_point_id": {"type": ["string", "null"]},
+        "measurement_type_code": {"type": ["string", "null"]},
+        "observed_at": {"type": ["string", "null"]},
+        "dataset_type": {"type": ["string", "null"]}
+      }
+    },
+    "locator_ledger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "workbook", "sheet", "key"],
+      "properties": {
+        "kind": {"type": "string", "const": "ledger"},
+        "workbook": {"type": "string"},
+        "sheet": {"type": "string"},
+        "key": {"type": "string"}
+      }
+    },
+    "locator_knowledge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "source_id", "source_locator", "source_version"],
+      "properties": {
+        "kind": {"type": "string", "const": "knowledge"},
+        "source_id": {"type": ["string", "null"]},
+        "source_locator": {"type": ["string", "null"]},
+        "source_version": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

@@ -1,0 +1,264 @@
+{
+ "acceptance_definitions": {
+  "class_applicability": "Approved rule list names edition, clause, covered equipment classes and streams; reviewer signs applicability to this telemetry.",
+  "defect_container_namespaces": "Container codebook located; linkage key to ledger/telemetry proven on samples; typeless rows classified, not assumed.",
+  "outcome_severity_validity": "Owner-validated outcome set with asset linkage, timestamps, and state semantics; single-row candidates never promoted alone.",
+  "telemetry_to_ledger_mapping": "Named IDs match exactly on a documented key; namespaces, normalizations, and exceptions recorded; owner confirms scope.",
+  "timestamp_cadence": "Timezone/offset and interval encoding stated by the data owner; gaps attributable; equal-spacing claims still require cadence proof.",
+  "units_scaling_sign": "Unit, scaling factor, and sign stated per code from metering documentation or reviewer ruling; CT/PT effects ruled in or out explicitly.",
+  "zero_operating_state": "Metering documentation or ruling distinguishes de-energized readings from missing data per code; no global zero rule assumed."
+ },
+ "package_version": "1.0.0",
+ "requests": [
+  {
+   "acceptance_criterion": "telemetry_to_ledger_mapping",
+   "acceptance_text": "Named IDs match exactly on a documented key; namespaces, normalizations, and exceptions recorded; owner confirms scope.",
+   "affected_fields_or_identifiers": [
+    "telemetry asset IDs (UUID, 28DKX-*, SBID*)",
+    "ledger psr_id/ast_id",
+    "defect container_id"
+   ],
+   "contradictions": [],
+   "decision_rationale": null,
+   "linked_register_ids": [
+    "EV-ASSET-IDENTITY",
+    "EV-META-astId",
+    "EV-META-astType"
+   ],
+   "owner_role": "data owner",
+   "priority": 1,
+   "request_id": "REQ-01",
+   "required_evidence": "Documented key map or export-system statement.",
+   "resolution_status": "drafted",
+   "reviewer": null,
+   "source": "domain question 1",
+   "title": "Identifier namespaces and cross-system mapping",
+   "unresolved_decision": "Whether non-matching IDs denote the same equipment."
+  },
+  {
+   "acceptance_criterion": "telemetry_to_ledger_mapping",
+   "acceptance_text": "Named IDs match exactly on a documented key; namespaces, normalizations, and exceptions recorded; owner confirms scope.",
+   "affected_fields_or_identifiers": [
+    "telemetry assets absent from ledger (11 IDs)",
+    "defect container 28DKX-3681 ledger absence"
+   ],
+   "contradictions": [],
+   "decision_rationale": null,
+   "linked_register_ids": [
+    "EV-ASSET-IDENTITY",
+    "EV-OUTCOMES-LABELED"
+   ],
+   "owner_role": "asset owner",
+   "priority": 2,
+   "request_id": "REQ-02",
+   "required_evidence": "Owner confirmation per asset.",
+   "resolution_status": "drafted",
+   "reviewer": null,
+   "source": "domain question 2",
+   "title": "Missing ledger rows for metered assets",
+   "unresolved_decision": "Whether absent assets are retired, out of scope, or missing data."
+  },
+  {
+   "acceptance_criterion": "units_scaling_sign",
+   "acceptance_text": "Unit, scaling factor, and sign stated per code from metering documentation or reviewer ruling; CT/PT effects ruled in or out explicitly.",
+   "affected_fields_or_identifiers": [
+    "A_phsA/B/C",
+    "PhV_phsA/B/C",
+    "high-side fill factor"
+   ],
+   "contradictions": [],
+   "decision_rationale": null,
+   "linked_register_ids": [
+    "EV-CODE-A_phsA",
+    "EV-CODE-A_phsB",
+    "EV-CODE-A_phsC",
+    "EV-CODE-PhV_phsA",
+    "EV-CODE-PhV_phsB",
+    "EV-CODE-PhV_phsC"
+   ],
+   "owner_role": "metering/transformer domain reviewer",
+   "priority": 1,
+   "request_id": "REQ-03",
+   "required_evidence": "Applicability ruling with clause reference.",
+   "resolution_status": "drafted",
+   "reviewer": null,
+   "source": "domain question 3",
+   "title": "Low-side voltage/current units and fill-rule applicability",
+   "unresolved_decision": "Whether documented V/A and the x25 fill apply to these exports."
+  },
+  {
+   "acceptance_criterion": "units_scaling_sign",
+   "acceptance_text": "Unit, scaling factor, and sign stated per code from metering documentation or reviewer ruling; CT/PT effects ruled in or out explicitly.",
+   "affected_fields_or_identifiers": [
+    "PhW_phsA/B/C",
+    "PhVAr_phsA/B/C",
+    "TotW",
+    "TotVar"
+   ],
+   "contradictions": [],
+   "decision_rationale": null,
+   "linked_register_ids": [
+    "EV-CODE-PhW_phsA",
+    "EV-CODE-PhW_phsB",
+    "EV-CODE-PhW_phsC",
+    "EV-CODE-PhVAr_phsA",
+    "EV-CODE-PhVAr_phsB",
+    "EV-CODE-PhVAr_phsC",
+    "EV-CODE-TotW",
+    "EV-CODE-TotVar",
+    "EV-REACTIVE-SIGN"
+   ],
+   "owner_role": "metering/transformer domain reviewer",
+   "priority": 1,
+   "request_id": "REQ-04",
+   "required_evidence": "Metering documentation or reviewer ruling.",
+   "resolution_status": "drafted",
+   "reviewer": null,
+   "source": "domain question 4",
+   "title": "Active/reactive power units and reactive sign convention",
+   "unresolved_decision": "Units, aggregation, and sign reading of power values."
+  },
+  {
+   "acceptance_criterion": "timestamp_cadence",
+   "acceptance_text": "Timezone/offset and interval encoding stated by the data owner; gaps attributable; equal-spacing claims still require cadence proof.",
+   "affected_fields_or_identifiers": [
+    "dataTime strings",
+    "timeInterval/timeUnit",
+    "885-minute gap"
+   ],
+   "contradictions": [],
+   "decision_rationale": null,
+   "linked_register_ids": [
+    "EV-TIME-TIMEZONE",
+    "EV-TIME-INTERVAL"
+   ],
+   "owner_role": "data owner",
+   "priority": 2,
+   "request_id": "REQ-05",
+   "required_evidence": "Dated owner statement of timezone, sync, and encodings.",
+   "resolution_status": "drafted",
+   "reviewer": null,
+   "source": "domain question 5",
+   "title": "Timestamp timezone, sync, and interval encoding",
+   "unresolved_decision": "How to order, convert, and resample timestamps."
+  },
+  {
+   "acceptance_criterion": "class_applicability",
+   "acceptance_text": "Approved rule list names edition, clause, covered equipment classes and streams; reviewer signs applicability to this telemetry.",
+   "affected_fields_or_identifiers": [
+    "calc-sheet state rules",
+    "DL/T Table A.8 clauses"
+   ],
+   "contradictions": [],
+   "decision_rationale": null,
+   "linked_register_ids": [
+    "EV-RULES-APPROVED"
+   ],
+   "owner_role": "metering/transformer domain reviewer",
+   "priority": 3,
+   "request_id": "REQ-06",
+   "required_evidence": "Approved rule list with edition, clause, applicability.",
+   "resolution_status": "drafted",
+   "reviewer": null,
+   "source": "domain question 6",
+   "title": "Rule and threshold applicability to these telemetry streams",
+   "unresolved_decision": "Which clauses, if any, cover these streams."
+  },
+  {
+   "acceptance_criterion": "outcome_severity_validity",
+   "acceptance_text": "Owner-validated outcome set with asset linkage, timestamps, and state semantics; single-row candidates never promoted alone.",
+   "affected_fields_or_identifiers": [
+    "28DKX-3681 defect row",
+    "12 class rows",
+    "severity/elimination fields"
+   ],
+   "contradictions": [],
+   "decision_rationale": null,
+   "linked_register_ids": [
+    "EV-OUTCOMES-LABELED"
+   ],
+   "owner_role": "asset owner",
+   "priority": 3,
+   "request_id": "REQ-07",
+   "required_evidence": "Owner-validated outcome set with linkage and state semantics.",
+   "resolution_status": "drafted",
+   "reviewer": null,
+   "source": "domain question 7",
+   "title": "Defect outcome and severity validity",
+   "unresolved_decision": "Whether any defect row is a usable outcome label."
+  },
+  {
+   "acceptance_criterion": "zero_operating_state",
+   "acceptance_text": "Metering documentation or ruling distinguishes de-energized readings from missing data per code; no global zero rule assumed.",
+   "affected_fields_or_identifiers": [
+    "2,223 breaker zeros",
+    "transformer near-zero values"
+   ],
+   "contradictions": [],
+   "decision_rationale": null,
+   "linked_register_ids": [
+    "EV-ZERO-READINGS"
+   ],
+   "owner_role": "metering/transformer domain reviewer",
+   "priority": 4,
+   "request_id": "REQ-08",
+   "required_evidence": "Metering documentation or reviewer ruling.",
+   "resolution_status": "drafted",
+   "reviewer": null,
+   "source": "domain question 8",
+   "title": "Zero-reading and operating-state interpretation",
+   "unresolved_decision": "De-energized readings vs missing-data convention."
+  },
+  {
+   "acceptance_criterion": "telemetry_to_ledger_mapping",
+   "acceptance_text": "Named IDs match exactly on a documented key; namespaces, normalizations, and exceptions recorded; owner confirms scope.",
+   "affected_fields_or_identifiers": [
+    "container_type codes",
+    "216 typeless defect rows",
+    "consNo/consType/pt/ct/tFactor keys"
+   ],
+   "contradictions": [],
+   "decision_rationale": null,
+   "linked_register_ids": [
+    "EV-META-consNo",
+    "EV-META-consType",
+    "EV-META-pt",
+    "EV-META-ct",
+    "EV-META-tFactor"
+   ],
+   "owner_role": "data owner",
+   "priority": 4,
+   "request_id": "REQ-09",
+   "required_evidence": "Source-system dictionaries.",
+   "resolution_status": "drafted",
+   "reviewer": null,
+   "source": "domain question 9",
+   "title": "Container and typeless code dictionaries",
+   "unresolved_decision": "Code meanings and key roles before any use in joins."
+  },
+  {
+   "acceptance_criterion": "telemetry_to_ledger_mapping",
+   "acceptance_text": "Named IDs match exactly on a documented key; namespaces, normalizations, and exceptions recorded; owner confirms scope.",
+   "affected_fields_or_identifiers": [
+    "2 ledger-linked assets",
+    "1 candidate outcome link"
+   ],
+   "contradictions": [],
+   "decision_rationale": null,
+   "linked_register_ids": [
+    "EV-COVERAGE-EVAL"
+   ],
+   "owner_role": "reliability engineer",
+   "priority": 5,
+   "request_id": "REQ-10",
+   "required_evidence": "Coverage inventory with assets and history depths.",
+   "resolution_status": "drafted",
+   "reviewer": null,
+   "source": "domain question 10",
+   "title": "Evaluation coverage inventory",
+   "unresolved_decision": "What additional labeled assets/history are obtainable."
+  }
+ ],
+ "review_store_limitation": "Local review cases carry self-asserted reviewer labels without authentication; they support workflow notes, never professional credential or approval.",
+ "status_rule": "Requests start drafted. Receiving or translating evidence never changes engineering status; only the register transition policy with recorded approval does."
+}

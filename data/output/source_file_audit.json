@@ -1,0 +1,153 @@
+{
+ "audit_version": "source-file-audit-v1",
+ "files": [
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "chinese_present": true,
+   "filename": "0401004-\u67f1\u4e0a\u53d8\u538b\u5668.txt",
+   "kind": "text",
+   "sha256": "83dad15878cbc3659b0b3229c581b1418fb358ac059dbf1c35139090b1ffb82e",
+   "size_bytes": 10382
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "chinese_present": true,
+   "filename": "0401004-\u67f1\u4e0a\u53d8\u538b\u5668\u5386\u53f2.txt",
+   "kind": "text",
+   "sha256": "af033b17a417b0ddb2b7b5ac8e067ecd76e3621dd4e8a0057548ecb6bbfbdf82",
+   "size_bytes": 588666
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "chinese_present": true,
+   "filename": "0401005-\u67f1\u4e0a\u65ad\u8def\u5668.txt",
+   "kind": "text",
+   "sha256": "435e6d2f82ca0b76543ebe5c7470647b80a3ececb7cde48d56f70fb905686e11",
+   "size_bytes": 7909
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "chinese_present": true,
+   "filename": "0401005-\u67f1\u4e0a\u65ad\u8def\u5668\u5386\u53f2.txt",
+   "kind": "text",
+   "sha256": "290565f4e27fdbb24925aaa88397192357424093cf283c20bda058e2501616e6",
+   "size_bytes": 624118
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "chinese_present": true,
+   "filename": "0403000-\u9988\u7ebf.txt",
+   "kind": "text",
+   "sha256": "bf797ce475998227a5fbb65478bf4d80ff7a7724e91403568225b6b3f37c4b3a",
+   "size_bytes": 5616
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "chinese_present": true,
+   "filename": "0408001-\u914d\u7535\u53d8\u538b\u5668.txt",
+   "kind": "text",
+   "sha256": "99de0be2c3834d6ae24854467f4093c7bc2d177beae3fcc4d2a7fa0ee08485d4",
+   "size_bytes": 10379
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "chinese_present": true,
+   "filename": "0408001-\u914d\u7535\u53d8\u538b\u5668\u5386\u53f2.txt",
+   "kind": "text",
+   "sha256": "7b032dbaccca75c1791850de1c8733ee68ab32db1ec76c60d5015d740fd6e487",
+   "size_bytes": 369200
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "chinese_present": true,
+   "filename": "0408003-\u914d\u7f51\u65ad\u8def\u5668.txt",
+   "kind": "text",
+   "sha256": "bcbf742a9ba357b4c1dd31c36017e4e082f433c78207a472ab853fe37a8c9bc6",
+   "size_bytes": 66855
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "chinese_present": true,
+   "filename": "2014\u914d\u7535\u7f51\u8fd0\u7ef4\u89c4\u7a0b\uff08\u53c2\u8003\uff09.pdf",
+   "kind": "pdf",
+   "pages": 49,
+   "sha256": "970827929668e39bc60d55f24ab1de7cdf99b365ee94b40baa7a54e93ad97984",
+   "size_bytes": 32894433
+  },
+  {
+   "archive": "AI\u8bbe\u5907\u8bc4\u4ef7\u667a\u80fd\u4f53\u96c6\u5408.zip",
+   "chinese_present": false,
+   "filename": "~$\u667a\u80fd\u914d\u7f51\u8bbe\u5907\u72b6\u6001\u8bc4\u4ef7\u7cfb\u7edf\u529f\u80fd\u83dc\u5355.xlsx",
+   "kind": "workbook_unreadable_lockfile",
+   "note": "OLE lock placeholder, not a workbook; skipped",
+   "sha256": "10cf2d12f68ccd87ea8188a5d69f6a84c94e2ae8572ad028c07a9174e992b294",
+   "size_bytes": 165
+  },
+  {
+   "archive": "AI\u8bbe\u5907\u8bc4\u4ef7\u667a\u80fd\u4f53\u96c6\u5408.zip",
+   "chinese_present": true,
+   "filename": "\u667a\u80fd\u914d\u7f51\u8bbe\u5907\u72b6\u6001\u8bc4\u4ef7\u7cfb\u7edf\u529f\u80fd\u83dc\u5355.xlsx",
+   "kind": "workbook",
+   "sha256": "bdee5c5a32f5ff66d5885becbe0a88b030dd8cded04bfff128e05da79bc45d79",
+   "sheets": {
+    "sheet1.xml": 200
+   },
+   "size_bytes": 13250
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "chinese_present": true,
+   "filename": "\u7f3a\u9677\u63cf\u8ff0\u6807\u51c6\u5e93.xlsx",
+   "kind": "workbook",
+   "sha256": "a4615b862fe0078580f357873905716d46315d1a1cd57e385a6febbc2262b76a",
+   "sheets": {
+    "sheet1.xml": 23616,
+    "sheet2.xml": 1678
+   },
+   "size_bytes": 8180989
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "chinese_present": true,
+   "filename": "\u7f3a\u9677\u8bb0\u5f55.xlsx",
+   "kind": "workbook",
+   "sha256": "be6848be1682eb000b92575680129f34e756b5ca7b1a13b4b560db99c2fc39df",
+   "sheets": {
+    "sheet1.xml": 1012
+   },
+   "size_bytes": 454816
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "chinese_present": true,
+   "filename": "\u8bbe\u5907\u53f0\u8d26\u6c60.xlsx",
+   "kind": "workbook",
+   "sha256": "f0d1d68f3176c8e6b1ea5178afc8aa8a570722d2f6eecbae950795879331b218",
+   "sheets": {
+    "sheet1.xml": 3812
+   },
+   "size_bytes": 839487
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "chinese_present": true,
+   "filename": "\u8fd0\u884c\u72b6\u6001\u8ba1\u7b97\u89c4\u5219.xlsx",
+   "kind": "workbook",
+   "sha256": "3b0c330d5d3fe8880125d99893b5e0058acfed2d70e2d79f5548011ef4c12665",
+   "sheets": {
+    "sheet1.xml": 24,
+    "sheet2.xml": 14
+   },
+   "size_bytes": 13572
+  },
+  {
+   "archive": "\u76f8\u5173\u8d44\u6599\u6570\u636e.zip",
+   "chinese_present": true,
+   "filename": "\u914d\u7f51\u8bbe\u5907\u72b6\u6001\u8bc4\u4ef7\u5bfc\u5219.pdf",
+   "kind": "pdf",
+   "pages": 56,
+   "sha256": "4cec6dde6cd2138ed8e6d81bae826cf098e7515be0229e85422a8354daefc180",
+   "size_bytes": 3620044
+  }
+ ]
+}

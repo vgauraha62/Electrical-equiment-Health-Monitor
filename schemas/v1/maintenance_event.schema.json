@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/v1/maintenance_event.schema.json",
+  "title": "MaintenanceEvent",
+  "description": "Inspection or maintenance event. No maintenance history exists in current exports.",
+  "type": "object",
+  "required": ["asset_id", "event_type", "data_origin", "schema_version", "source_ref"],
+  "properties": {
+    "asset_id": {"type": "string", "minLength": 1},
+    "event_id": {"type": ["string", "null"]},
+    "event_type": {"type": "string", "enum": ["inspection", "oil_test", "repair", "oil_replacement", "unknown"]},
+    "occurred_at_original": {"type": ["string", "null"]},
+    "description_original": {"type": ["string", "null"]},
+    "description_en": {"type": ["string", "null"]},
+    "translation_status": {"type": ["string", "null"], "enum": ["reviewed", "draft", "not_applicable", null]},
+    "outcome": {"type": ["string", "null"]},
+    "data_origin": {"type": "string", "enum": ["observed", "synthetic"]},
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "source_ref": {"type": "object"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,72 @@
+# Runtime source and the explicitly required local fallback inputs are retained.
+# This filter applies only when deploying from the backend directory.
+
+# Local environments, VCS metadata, caches and editor state
+.venv/
+venv/
+env/
+.git/
+.opencode/
+__pycache__/
+*.py[cod]
+*.swp
+*.swo
+.DS_Store
+
+# Development and offline analysis material
+tests/
+scripts/
+sql/
+schemas/
+data/source_archive/
+data/en/
+data/output/*
+!data/output/statistical_baseline.json
+!data/output/equipment_catalog.json
+!data/output/ledger_review_record.json
+# Per-file sha256 provenance for the eight telemetry exports above. Without it
+# every telemetry evidence item is provenance-incomplete and the ledger-to-
+# telemetry evidence link is blocked. It carries only file hashes for files that
+# already ship, not the full lineage inventory or any source data.
+!data/output/manifest.json
+# Validated, read-only snapshot of locally established manual asset links.
+# The editable mapping store remains excluded and writes stay disabled in deploy.
+!data/output/asset_mapping_snapshot.json
+docs/*
+!docs/evidence_register.json
+
+# Keep only the reference CSV loaded by app/main.py
+data/input/reference/*
+!data/input/reference/defect_reference_sample.csv
+
+# All eight telemetry exports backing the demo directory (explicit so a future
+# broad data/input rule cannot silently drop them)
+!data/input/telemetry/distribution_network_circuit_breaker_snapshot.json
+!data/input/telemetry/distribution_transformer_history.json
+!data/input/telemetry/distribution_transformer_snapshot.json
+!data/input/telemetry/feeder_snapshot.json
+!data/input/telemetry/pole_mounted_circuit_breaker_history.json
+!data/input/telemetry/pole_mounted_circuit_breaker_snapshot.json
+!data/input/telemetry/pole_mounted_transformer_history.json
+!data/input/telemetry/pole_mounted_transformer_snapshot.json
+
+# Credentials and local secrets must never enter a Cloud Build source upload.
+# Keep these deny rules last so they override any broad allowlist above.
+.env
+.env.*
+**/.env
+**/.env.*
+secrets/
+secrets/**
+**/secrets/**
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+id_rsa
+id_ed25519
+*service-account*.json
+*service_account*.json
+*credentials*.json
+*credential*.json

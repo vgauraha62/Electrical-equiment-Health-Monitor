@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/v1/measurement.schema.json",
+  "title": "Measurement",
+  "description": "Canonical measurement. Units and timezone are unconfirmed for current exports; preserve originals and mark normalized values unknown where applicable.",
+  "type": "object",
+  "required": ["asset_id", "measurement_type_code", "measurement_value_status", "observed_at_original", "data_origin", "schema_version", "source_ref", "quality_status"],
+  "properties": {
+    "asset_id": {"type": "string", "minLength": 1},
+    "measurement_point_id": {"type": ["string", "null"]},
+    "measurement_type_code": {"type": "string", "minLength": 1},
+    "measurement_name": {"type": ["string", "null"]},
+    "measurement_value": {"type": ["number", "null"]},
+    "measurement_value_status": {"type": "string", "enum": ["present", "missing", "unknown", "not_applicable", "invalid"]},
+    "original_unit": {"type": ["string", "null"]},
+    "normalized_unit": {"type": ["string", "null"]},
+    "unit_status": {"type": "string", "enum": ["verified", "unconfirmed", "unknown", "not_applicable"]},
+    "observed_at_original": {"type": "string", "minLength": 1},
+    "observed_at_timezone": {"type": ["string", "null"]},
+    "timezone_status": {"type": "string", "enum": ["verified", "unconfirmed", "unknown"]},
+    "sampling_method": {"type": ["string", "null"]},
+    "dataset_type": {"type": ["string", "null"], "enum": ["snapshot", "history", null]},
+    "evidence_id": {"type": ["string", "null"]},
+    "quality_status": {"type": "string", "enum": ["valid", "missing", "unknown", "not_applicable", "invalid"]},
+    "quality_flags": {"type": ["string", "null"]},
+    "validation_reason": {"type": ["string", "null"]},
+    "data_origin": {"type": "string", "enum": ["observed", "synthetic"]},
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "source_ref": {
+      "type": "object",
+      "required": ["source_file_id"],
+      "properties": {
+        "source_file_id": {"type": "string"},
+        "source_record_index": {"type": ["integer", "null"]},
+        "source_uri": {"type": ["string", "null"]},
+        "checksum_sha256": {"type": ["string", "null"]},
+        "extraction_method": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

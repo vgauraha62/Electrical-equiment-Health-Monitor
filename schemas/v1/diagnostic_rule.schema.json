@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/v1/diagnostic_rule.schema.json",
+  "title": "DiagnosticRule",
+  "description": "Approved diagnostic rule. Thresholds require verified standard clause and domain approval; unapproved rules must not be used for assessment.",
+  "type": "object",
+  "required": ["rule_id", "rule_version", "status", "applicability", "schema_version"],
+  "properties": {
+    "rule_id": {"type": "string", "minLength": 1},
+    "rule_version": {"type": "string", "minLength": 1},
+    "status": {"type": "string", "enum": ["approved", "draft", "superseded"]},
+    "applicability": {
+      "type": "object",
+      "required": ["equipment_type_code"],
+      "properties": {
+        "equipment_type_code": {"type": "string"},
+        "conditions": {"type": ["string", "null"]}
+      }
+    },
+    "standard_ref": {
+      "type": ["object", "null"],
+      "properties": {
+        "title": {"type": ["string", "null"]},
+        "edition": {"type": ["string", "null"]},
+        "clause": {"type": ["string", "null"]},
+        "units": {"type": ["string", "null"]}
+      }
+    },
+    "logic_ref": {"type": ["string", "null"]},
+    "author": {"type": ["string", "null"]},
+    "approved_by": {"type": ["string", "null"]},
+    "approved_at": {"type": ["string", "null"]},
+    "schema_version": {"type": "string", "const": "1.0.0"}
+  },
+  "additionalProperties": true
+}
